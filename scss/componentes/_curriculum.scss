@@ -1,0 +1,44 @@
+@import '../funciones/list';
+@import '../funciones/mixins';
+
+
+
+.cv-container {
+    text-align: center;
+    width: 100%;
+    height: 800px;
+    
+}
+
+.cv-row {
+    @extend %flexbox-row;
+    align-items: center;
+}
+
+.cv-item {
+    font-family: "Inter Roman", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    height: 250px;
+    width: 350px;
+    text-align: center;
+    background: rgb(74, 156, 203, 10%);
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;    
+}
+
+.cv-tittle {
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+    color: nth($color, 3);
+}
+
+.cv-text {
+    padding: 0px 20px;
+    color: black;
+}
+
+
+
+
+
+

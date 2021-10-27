@@ -1,0 +1,216 @@
+/* MOBILE */
+
+@import '../funciones/extends';
+@import '../funciones/list';
+@import '../funciones/mixins';
+
+/*MOBILE QUERY*/
+@media only screen and (min-width: 601px) {
+
+    .none-desktop {
+        display: none !important;
+    }
+ }
+
+
+ @media only screen and (min-width: 100px) and  (max-width: 600px) {
+
+body {
+
+    .none-mobile {
+        display: none !important;
+    }
+    .detalle-text {
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.7rem;
+        margin: 10px;
+        padding: 0rem 1rem;
+    }
+
+    .titulos {
+        font-size: 2rem;
+        padding: 0rem 1rem;
+    }
+
+    .parrafos {
+        padding: 0 5%;
+    }
+
+
+        
+.parrafos-3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 0rem 1.4rem;
+
+}
+    .titulos-blanco {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        padding: 0rem 1rem;
+    }
+    .section-blanco {
+        height: 1200px;
+    }
+
+    .section-blanco2 {
+        height: 1400px;
+    }
+
+
+    .section-blanco-quees {
+        height: 850px;
+        width: 100%;   
+        transition: 1.5s all;
+        color: black;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+
+    .columna-50 {
+        padding: 0 1rem;
+    }
+    
+    .columna-50-b {
+        padding: 0 1rem;
+    }
+
+    .parrafos-2 {
+        font-size: 1.5rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row2 {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .titulos-rosa {
+        font-size: 2rem;
+    }
+
+    .cards {
+        width: 80%;
+        height: 235px;
+        background: rgb(244, 0, 92);
+        border-radius: 10px;
+        color: white;
+        margin-bottom: 1rem;
+    }
+    
+    .parrafos-card {
+        font-size: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .titulo-card {
+        font-size: 1.3rem;
+        padding-top: 1rem;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .row3 {
+        margin-top: 1rem;
+    }
+    
+    .cards-contacto {
+        width: 80%;
+        height: 220px;
+        background: rgb(244, 0, 92);
+        border-radius: 10px;
+        color: white;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .parrafos-card-contacto {
+        font-size: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .titulo-card-contacto {
+        font-size: 1.2rem;
+        padding: 1rem 1rem 0rem 1rem;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-extra {
+        height: 2500px;
+        }
+
+    .recursos {
+        font-size: 1.2rem;
+        padding: 0rem 1.5rem 0rem 1.5rem;
+    }
+
+    .arrow {
+        color: white;
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+
+    .arrow2 {
+        font-size: 3rem;
+    }
+    .arrow-b {
+      font-size: 3rem;
+      margin-top: 1rem;
+    }
+
+    .video {
+        width: 100%;
+        height: 30% ;
+    }
+}
+
+
+.titulo-portada {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 3rem;
+    margin-top: 5rem;
+    padding: 0 2rem;
+    font-weight: 900;
+    transition: 0.5s all;
+
+}
+.section-video {
+    height: 400px;
+
+    
+    }
+
+    
+    .sectionb {
+        height: 1150px;
+    }
+
+
+}

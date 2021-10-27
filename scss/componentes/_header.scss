@@ -1,0 +1,88 @@
+
+
+header {
+    height: 750px;
+    width: 100%;
+    background: rgb(217,0,83);
+    background: linear-gradient(180deg, rgba(217,0,83,1) 21%, rgba(51,51,51,1) 100%);
+}
+
+
+.portada-img {
+    width: 400px;
+    margin-top: 10%;
+    transition: all 0.5s;
+    &:hover {
+        box-shadow: 5px -5px rgb(51, 51, 51);
+        transform: translate(-10px);
+    }
+}
+
+
+.titulo-portada {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 5rem;
+    margin-top: 10rem;
+    padding: 0 15rem;
+    font-weight: 900;
+    transition: 0.5s all;
+
+}
+
+
+.logo-portada {
+    width: 10rem;
+    position: relative;
+    top: 1rem;
+    animation: changeBorder 2s infinite;
+    animation-name: changeBorder;
+
+    @keyframes changeBorder {
+
+        0% {
+            opacity: 100%;
+        }
+
+        10% {
+            opacity: 90%;
+       }
+
+        20% {
+            opacity: 80%;
+               }
+
+        30% {
+            opacity: 70%;
+       }
+
+        40% {
+            opacity: 60%;
+        }
+
+        50% {
+            opacity: 50%;
+       }
+        
+        60% {
+            opacity: 60%;
+        }
+
+        70% {
+            opacity: 70%;
+       }
+
+        80% {
+            opacity: 80%;
+        }
+
+        90% {
+            opacity: 90%;
+       }
+        
+        100% {
+            opacity: 100%;
+        }
+
+}
+}
