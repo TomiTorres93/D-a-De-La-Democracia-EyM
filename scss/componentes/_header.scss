@@ -3,8 +3,10 @@
 header {
     height: 750px;
     width: 100%;
-    background: rgb(217,0,83);
-    background: linear-gradient(180deg, rgba(217,0,83,1) 21%, rgba(51,51,51,1) 100%);
+    @extend %flexbox-column;
+    text-align: center;
+    background: rgb(116,102,138);
+    background: linear-gradient(180deg, rgba(116,102,138,1) 21%, rgba(50,50,50,1) 100%);
 }
 
 

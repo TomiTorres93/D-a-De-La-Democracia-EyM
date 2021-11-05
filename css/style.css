@@ -1,0 +1,616 @@
+/* LISTAS */
+/*NAVBAR*/
+.menu-container {
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  padding-top: 8px;
+  height: 100px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s all;
+  position: relative;
+  right: 0.5rem;
+}
+li a:hover {
+  color: yellow;
+}
+
+.menu {
+  color: black;
+  letter-spacing: 3px;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  text-align: left;
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+.footer {
+  background-color: black;
+  margin-bottom: 10px;
+  position: fixed;
+}
+
+header {
+  height: 750px;
+  width: 100%;
+  text-align: center;
+  background: #74668a;
+  background: linear-gradient(180deg, #74668a 21%, #323232 100%);
+}
+
+.portada-img {
+  width: 400px;
+  margin-top: 10%;
+  transition: all 0.5s;
+}
+.portada-img:hover {
+  box-shadow: 5px -5px #333333;
+  transform: translate(-10px);
+}
+
+.titulo-portada {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  font-size: 5rem;
+  margin-top: 10rem;
+  padding: 0 15rem;
+  font-weight: 900;
+  transition: 0.5s all;
+}
+
+.logo-portada {
+  width: 10rem;
+  position: relative;
+  top: 1rem;
+  animation: changeBorder 2s infinite;
+  animation-name: changeBorder;
+}
+@keyframes changeBorder {
+  0% {
+    opacity: 100%;
+  }
+  10% {
+    opacity: 90%;
+  }
+  20% {
+    opacity: 80%;
+  }
+  30% {
+    opacity: 70%;
+  }
+  40% {
+    opacity: 60%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  60% {
+    opacity: 60%;
+  }
+  70% {
+    opacity: 70%;
+  }
+  80% {
+    opacity: 80%;
+  }
+  90% {
+    opacity: 90%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* MIXINS */
+/*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
+/*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
+/*AGREGAR WEBKITS*/
+/* LISTAS */
+.boton-container {
+  height: 600px;
+  transition: 1s all;
+}
+
+.boton-1 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  align-content: center;
+  font-weight: bolder;
+  transition: 0.5s ease-in-out;
+  text-shadow: 10px 1px 25px black;
+}
+
+/* MIXINS */
+/*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
+/*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
+/*AGREGAR WEBKITS*/
+/* LISTAS */
+* {
+  padding: 0;
+  margin: 0;
+}
+* ::-webkit-scrollbar {
+  width: 10px;
+}
+* ::-webkit-scrollbar-thumb {
+  background: #74668a;
+  border-radius: 8px;
+}
+* ::-webkit-scrollbar-track {
+  box-shadow: #eeeaf4 0px 0px 5px inset;
+  border-radius: 10px;
+}
+
+body {
+  line-height: 1.55;
+  width: 100%;
+  margin: 0px auto;
+}
+
+nav {
+  text-align: center;
+}
+
+.seccion-color {
+  text-align: center;
+  height: 1000px;
+  padding: 200px 5%;
+  background-color: #74668a;
+  color: white;
+  overflow-x: auto;
+}
+
+.seccion-blanca {
+  text-align: center;
+  height: 1000px;
+  padding: 200px 5%;
+  background-color: white;
+  color: #a390bd;
+}
+
+.seccion-negra {
+  text-align: center;
+  height: 1000px;
+  padding: 200px 5%;
+  color: #a390bd;
+  background-color: #323232;
+}
+
+.seccion-negra-ministerio {
+  text-align: center;
+  height: 600px;
+  padding: 200px 5%;
+  color: #a390bd;
+  background-color: #323232;
+}
+
+.seccion-foto-1 {
+  text-align: center;
+  height: 1000px;
+  background-image: url("../images/raul-alfonsin.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.candidatos-container {
+  text-align: center;
+}
+
+.ucrcontainer {
+  width: 13rem;
+  height: 13rem;
+  background-color: #a390bd;
+  border-radius: 10px;
+  margin: 2rem auto;
+}
+
+.titulo {
+  font-family: "Raleway", sans-serif;
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.parrafo {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.2rem;
+  padding: 0 10%;
+  color: black;
+}
+
+.detalle-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+  margin: 10px;
+  color: white;
+}
+
+.recuadro {
+  width: 70%;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  margin: 10px;
+  padding: 5%;
+  color: white;
+  background-color: #74668a;
+  opacity: 70%;
+  transition: 1s all;
+}
+.recuadro:hover {
+  opacity: 100%;
+}
+
+.botones-container {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.botonelec {
+  width: 25%;
+  margin: 0 0.5rem;
+  background-color: #74668a;
+  border-radius: 10px;
+}
+
+.textelec {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.masboton {
+  text-align: center;
+  color: white;
+  background: none;
+  border: none;
+  transition: 0.5s all;
+  cursor: pointer;
+  align-items: center;
+}
+
+.blanco {
+  color: white;
+}
+
+.color1 {
+  color: #a390bd;
+}
+
+.color2 {
+  color: #8a7aa3;
+}
+
+.color3 {
+  color: #74668a;
+}
+
+.quiz {
+  text-align: center;
+  background-color: black;
+  height: 1000px;
+  padding: 200px 5%;
+}
+
+.quiz-titulo {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.quiz-respuestas-cont {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.quiz-respuestas {
+  color: white;
+  border: none;
+  font-size: 1.6rem;
+  width: 20rem;
+  padding: 2rem;
+  background-color: grey;
+  margin: 2rem 6rem;
+  transition: background-color ease 0.5s;
+  border-radius: 25px;
+  font-weight: 700;
+}
+
+.resp-correcta {
+  background-color: chartreuse;
+}
+
+.resp-incorrecta {
+  background-color: red;
+}
+
+.calendario {
+  width: 10%;
+  margin-bottom: 2rem;
+}
+
+.urna {
+  width: 5%;
+  margin-bottom: 2rem;
+}
+
+.arrow {
+  margin-top: 6rem;
+  width: 4rem;
+  animation: lateralizacion 5s infinite;
+  animation-name: lateralizacion;
+}
+@keyframes lateralizacion {
+  0% {
+    transform: translate(25px);
+  }
+  10% {
+    transform: translate(-25px);
+  }
+  20% {
+    transform: translate(25px);
+  }
+  30% {
+    transform: translate(-25px);
+  }
+  40% {
+    transform: translate(25px);
+  }
+  50% {
+    transform: translate(-25px);
+  }
+  60% {
+    transform: translate(25px);
+  }
+  70% {
+    transform: translate(-25px);
+  }
+  80% {
+    transform: translate(25px);
+  }
+  90% {
+    transform: translate(-25px);
+  }
+  100% {
+    transform: translate(25px);
+  }
+}
+
+.columna {
+  text-align: center;
+}
+
+.row {
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* MIXINS */
+/*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
+/*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
+/*AGREGAR WEBKITS*/
+/* MOBILE */
+/* Extends */
+.boton-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.seccion-blanca, .seccion-foto-1, .candidatos-container, .botones-container, .masboton, .quiz-respuestas-cont, .row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+header, .seccion-color, .seccion-negra, .seccion-negra-ministerio, .quiz, .columna {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* LISTAS */
+/* MIXINS */
+/*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
+/*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
+/*AGREGAR WEBKITS*/
+/*MOBILE QUERY*/
+@media only screen and (min-width: 601px) {
+  .none-desktop {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+  body .none-mobile {
+    display: none !important;
+  }
+  body .detalle-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.7rem;
+    margin: 10px;
+    padding: 0rem 1rem;
+  }
+  body .titulos {
+    font-size: 2rem;
+    padding: 0rem 1rem;
+  }
+  body .parrafos {
+    padding: 0 5%;
+  }
+  body .parrafos-3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 0rem 1.4rem;
+  }
+  body .titulos-blanco {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    padding: 0rem 1rem;
+  }
+  body .section-blanco {
+    height: 1200px;
+  }
+  body .section-blanco2 {
+    height: 1400px;
+  }
+  body .section-blanco-quees {
+    height: 850px;
+    width: 100%;
+    transition: 1.5s all;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .columna-50 {
+    padding: 0 1rem;
+  }
+  body .columna-50-b {
+    padding: 0 1rem;
+  }
+  body .parrafos-2 {
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  body .row2 {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  body .titulos-rosa {
+    font-size: 2rem;
+  }
+  body .cards {
+    width: 80%;
+    height: 235px;
+    background: #f4005c;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  body .parrafos-card {
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  body .titulo-card {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  body .row3 {
+    margin-top: 1rem;
+  }
+  body .cards-contacto {
+    width: 80%;
+    height: 220px;
+    background: #f4005c;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .parrafos-card-contacto {
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  body .titulo-card-contacto {
+    font-size: 1.2rem;
+    padding: 1rem 1rem 0rem 1rem;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  body .section-extra {
+    height: 2500px;
+  }
+  body .recursos {
+    font-size: 1.2rem;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+  }
+  body .arrow {
+    color: white;
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  body .arrow2 {
+    font-size: 3rem;
+  }
+  body .arrow-b {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  body .video {
+    width: 100%;
+    height: 30%;
+  }
+
+  .titulo-portada {
+    font-family: "Nunito", sans-serif;
+    color: white;
+    font-size: 3rem;
+    margin-top: 5rem;
+    padding: 0 2rem;
+    font-weight: 900;
+    transition: 0.5s all;
+  }
+
+  .section-video {
+    height: 400px;
+  }
+
+  .sectionb {
+    height: 1150px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
