@@ -215,6 +215,17 @@ nav {
   background-size: cover;
 }
 
+.seccion-foto-madres {
+  text-align: center;
+  height: 1000px;
+  background-image: url("../images/madres.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 1s all;
+}
+
 .candidatos-container {
   text-align: center;
 }
@@ -237,6 +248,13 @@ nav {
   font-family: "Roboto Slab", serif;
   font-size: 1.2rem;
   padding: 0 10%;
+  color: black;
+}
+
+.subtit {
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+  padding: 0;
   color: black;
 }
 
@@ -397,6 +415,62 @@ nav {
   }
 }
 
+.format {
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
+.arrow-down {
+  margin-top: 6rem;
+  font-size: 4rem;
+  animation: upanddown 5s infinite;
+  animation-name: upanddown;
+}
+@keyframes upanddown {
+  0% {
+    transform: translateY(15px);
+  }
+  10% {
+    transform: translateY(-15px);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  30% {
+    transform: translateY(-15px);
+  }
+  40% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(15px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  80% {
+    transform: translateY(15px);
+  }
+  90% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+.arrow-down:hover {
+  color: whitesmoke;
+}
+
+.up {
+  position: relative;
+  bottom: 4rem;
+}
+
 .columna {
   text-align: center;
 }
@@ -414,8 +488,56 @@ nav {
 }
 
 .id2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 4rem;
+}
+
+.id3 {
+  line-height: 2;
+}
+
+.id4 {
+  font-size: 1.8rem;
+}
+
+.glow-bl-v {
+  animation: glowblv 5s infinite;
+  animation-name: glowblv;
+}
+@keyframes glowblv {
+  0% {
+    color: #8a7aa3;
+  }
+  10% {
+    color: #8a7aa3;
+  }
+  20% {
+    color: white;
+  }
+  30% {
+    color: white;
+  }
+  40% {
+    color: #8a7aa3;
+  }
+  50% {
+    color: #8a7aa3;
+  }
+  60% {
+    color: white;
+  }
+  70% {
+    color: white;
+  }
+  80% {
+    color: #8a7aa3;
+  }
+  90% {
+    color: #8a7aa3;
+  }
+  100% {
+    color: #8a7aa3;
+  }
 }
 
 /* MIXINS */
@@ -431,7 +553,7 @@ nav {
   flex-wrap: wrap;
 }
 
-.seccion-blanca, .seccion-foto-1, .candidatos-container, .botones-container, .masboton, .quiz-respuestas-cont, .row {
+.seccion-blanca, .seccion-foto-1, .seccion-foto-madres, .candidatos-container, .botones-container, .masboton, .quiz-respuestas-cont, .row {
   display: flex;
   align-items: center;
   flex-direction: row;
