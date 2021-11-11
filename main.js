@@ -143,6 +143,43 @@ masboton4.addEventListener('click', function () {
     seccionelec3.classList.add('hidden')
 });
 
+// TESTIMONIOS DE MADRES
+
+const seccionmadres = document.querySelector('#seccionmadres')
+
+const madres1 = document.querySelector('#madres1')
+const madretest1 = document.querySelector('#madretest1')
+const madretest1a = document.querySelector('#madretest1a')
+const madretest1b = document.querySelector('#madretest1b')
+const madretest1c = document.querySelector('#madretest1c')
+
+const madres2 = document.querySelector('#madres2')
+const madretest2 = document.querySelector('#madretest2')
+const madretest2a = document.querySelector('#madretest2a')
+const madretest2b = document.querySelector('#madretest2b')
+const madretest2c = document.querySelector('#madretest2c')
+
+
+
+madres1.addEventListener('click', function () {
+
+    madres1.classList.toggle('panueloshadow')
+    seccionmadres.classList.toggle('extraheight')
+    madretest1.classList.toggle('hidden')
+    setTimeout(function() {$("#cvot8").fadeIn(300) 
+    madretest1a.classList.remove('hidden')}, 100)
+    setTimeout(function() {$("#cvot8").fadeIn(300) 
+    madretest1b.classList.remove('hidden')}, 300)
+    setTimeout(function() {$("#cvot8").fadeIn(300) 
+    madretest1c.classList.remove('hidden')}, 500)
+    
+    let a = madretest2.classList.contains('.hidden')
+
+    console.log(a)
+
+
+});
+
 //ANIMACIONES
 $(() => {
 
