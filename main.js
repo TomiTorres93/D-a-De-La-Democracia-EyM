@@ -147,6 +147,12 @@ masboton4.addEventListener('click', function () {
 
 const seccionmadres = document.querySelector('#seccionmadres')
 
+const botonmadressect = document.querySelector('#botonmadressect')
+const botonabuelassect = document.querySelector('#botonabuelassect')
+
+const madreseccion = document.querySelector('#madreseccion')
+const seccionabuelas = document.querySelector('#seccionabuelas')
+
 const madres1 = document.querySelector('#madres1')
 const madretest1 = document.querySelector('#madretest1')
 const madretest1a = document.querySelector('#madretest1a')
@@ -211,10 +217,10 @@ madres1.addEventListener('click', function () {
         madretest3.classList.toggle('hidden')
     }
 
-    //Cada vez que se apreta el botón, se pone o saca la sombra del pañuelo
+    //Cada vez que se aprieta el botón, se pone o saca la sombra del pañuelo
     madres1.classList.toggle('panueloshadow')
 
-    // Si se apreta este pañuelo, se le sacan las sombras a los otros 2
+    // Si se aprieta este pañuelo, se le sacan las sombras a los otros 2
     if (panuelo2 == true) {
         madres2.classList.remove('panueloshadow')
             
@@ -222,7 +228,7 @@ madres1.addEventListener('click', function () {
         madres3.classList.remove('panueloshadow')
     }
 
-    //Cada vez que se apreta el botón, se muestra o esconde el texto
+    //Cada vez que se aprieta el botón, se muestra o esconde el texto
     setTimeout(function() {        
         madretest1.classList.toggle('hidden')}, 500)
 
@@ -273,10 +279,10 @@ madres2.addEventListener('click', function () {
     if (madretest3check == false) {
         madretest3.classList.toggle('hidden')
     }
-    //Cada vez que se apreta el botón, se pone o saca la sombra del pañuelo
+    //Cada vez que se aprieta el botón, se pone o saca la sombra del pañuelo
     madres2.classList.toggle('panueloshadow')
 
-    // Si se apreta este pañuelo, se le sacan las sombras a los otros 2
+    // Si se aprieta este pañuelo, se le sacan las sombras a los otros 2
     if (panuelo1 == true) {
         madres1.classList.remove('panueloshadow')
             
@@ -284,7 +290,7 @@ madres2.addEventListener('click', function () {
         madres3.classList.remove('panueloshadow')
     }
 
-    //Cada vez que se apreta el botón, se muestra o esconde el texto
+    //Cada vez que se aprieta el botón, se muestra o esconde el texto
     setTimeout(function() {        
         madretest2.classList.toggle('hidden')}, 500)
  });
@@ -300,15 +306,6 @@ madres2.addEventListener('click', function () {
     let panuelo2 = madres2.classList.contains('panueloshadow')
     let panuelo3 = madres3.classList.contains('panueloshadow')
     let seccionmadrescheck = seccionmadres.classList.contains('extraheight')
-
-    console.log(seccionmadrescheck)
-    console.log(madretest1check)
-    console.log(madretest2check)
-    console.log(madretest3check)
-
-    console.log(panuelo1)
-    console.log(panuelo2)
-    console.log(panuelo3)
 
     // Si la sección no tiene EXTRA, la aplica.
 
@@ -332,10 +329,10 @@ madres2.addEventListener('click', function () {
         madretest1.classList.toggle('hidden')
     }
 
-    //Cada vez que se apreta el botón, se pone o saca la sombra del pañuelo
+    //Cada vez que se aprieta el botón, se pone o saca la sombra del pañuelo
     madres3.classList.toggle('panueloshadow')
 
-    // Si se apreta este pañuelo, se le sacan las sombras a los otros 2
+    // Si se aprieta este pañuelo, se le sacan las sombras a los otros 2
     if (panuelo2 == true) {
         madres2.classList.remove('panueloshadow')
             
@@ -343,14 +340,30 @@ madres2.addEventListener('click', function () {
         madres1.classList.remove('panueloshadow')
     }
 
-    //Cada vez que se apreta el botón, se muestra o esconde el texto
+    //Cada vez que se aprieta el botón, se muestra o esconde el texto
     setTimeout(function() {        
         madretest3.classList.toggle('hidden')}, 500)
 
-
-
 });
 
+
+
+///////////////////////////////////////////
+// BOTONES PARA CAMBIAR DE SECCIÓN DE MADRES Y ABUELAS
+
+botonabuelassect.addEventListener('click', function () {
+    madreseccion.classList.toggle('hidden')
+    seccionabuelas.classList.toggle('hidden')
+    botonabuelassect.classList.toggle('inactivo')
+    botonmadressect.classList.toggle('inactivo')
+})
+
+botonmadressect.addEventListener('click', function () {
+    seccionabuelas.classList.toggle('hidden')
+    madreseccion.classList.toggle('hidden')
+    botonabuelassect.classList.toggle('inactivo')
+    botonmadressect.classList.toggle('inactivo')
+})
 //ANIMACIONES
 $(() => {
 
