@@ -167,79 +167,189 @@ const madretest3c = document.querySelector('#madretest3c')
 
 
 
+
 console
 
 madres1.addEventListener('click', function () {
 
+    let madretest1check = madretest1.classList.contains('hidden')
     let madretest2check = madretest2.classList.contains('hidden')
     let madretest3check = madretest3.classList.contains('hidden')
+    let panuelo1 = madres1.classList.contains('panueloshadow')
+    let panuelo2 = madres2.classList.contains('panueloshadow')
+    let panuelo3 = madres3.classList.contains('panueloshadow')
     let seccionmadrescheck = seccionmadres.classList.contains('extraheight')
 
     console.log(seccionmadrescheck)
+    console.log(madretest1check)
     console.log(madretest2check)
     console.log(madretest3check)
+
+    console.log(panuelo1)
+    console.log(panuelo2)
+    console.log(panuelo3)
+
+    // Si la sección no tiene EXTRA, la aplica.
 
     if (seccionmadrescheck == false && madretest2check == true && madretest3check == true) {
         seccionmadres.classList.add('extraheight');
         seccionmadres.classList.remove('revextraheight');
-    } else if (seccionmadrescheck == true && madretest2check == true && madretest3check == true) {
+    } 
+    
+    // Si sólo está visible este texto, se saca el EXTRA
+    if (madretest1check == false && madretest2check == true && madretest3check == true) {
         seccionmadres.classList.add('revextraheight');
         seccionmadres.classList.remove('extraheight');
     }
 
-
-
-    madres1.classList.toggle('panueloshadow')
-    madretest1.classList.toggle('hidden')
-
-    setTimeout(function() {$(
-    "#madretest1a").fadeIn(500) 
-    madretest1a.classList.toggle('hidden')
-    $("#madretest1a").fadeIn(500) 
-    madretest1b.classList.toggle('hidden')
-    $("#madretest1a").fadeIn(500) 
-    madretest1c.classList.toggle('hidden')}, 500)
-
+    // Si se está mostrando alguno de los otros textos, se esconden (para mostrar sólo este)
     
-    if (madretest2check == false || madretest3check == false) {
+    if (madretest2check == false) {
         madretest2.classList.toggle('hidden')
+    }
+    if (madretest3check == false) {
         madretest3.classList.toggle('hidden')
     }
 
-    if (madretest2check == false || madretest3check == false) {
-        madretest2.classList.remove('panueloshadow')
-        madretest3.classList.remove('panueloshadow')
+    //Cada vez que se apreta el botón, se pone o saca la sombra del pañuelo
+    madres1.classList.toggle('panueloshadow')
 
+    // Si se apreta este pañuelo, se le sacan las sombras a los otros 2
+    if (panuelo2 == true) {
+        madres2.classList.remove('panueloshadow')
+            
+    } else if (panuelo3 == true) {
+        madres3.classList.remove('panueloshadow')
     }
+
+    //Cada vez que se apreta el botón, se muestra o esconde el texto
+    setTimeout(function() {        
+        madretest1.classList.toggle('hidden')}, 500)
+
+
+
 });
 
 
 
 madres2.addEventListener('click', function () {
+
     let madretest1check = madretest1.classList.contains('hidden')
+    let madretest2check = madretest2.classList.contains('hidden')
     let madretest3check = madretest3.classList.contains('hidden')
+    let seccionmadrescheck = seccionmadres.classList.contains('extraheight')
+    let panuelo1 = madres1.classList.contains('panueloshadow')
+    let panuelo2 = madres2.classList.contains('panueloshadow')
+    let panuelo3 = madres3.classList.contains('panueloshadow')
+    console.log(seccionmadrescheck)
+    console.log(madretest1check)
+    console.log(madretest2check)
+    console.log(madretest3check)
 
-    if (madretest1check == false || madretest3check == false) {
-        madretest1.classList.toggle('hidden')
-       madretest3.classList.toggle('hidden')
-   }
+    console.log(panuelo1)
+    console.log(panuelo2)
+    console.log(panuelo3)
 
-   seccionmadres.classList.toggle('extraheight')
-   seccionmadres.classList.toggle('revextraheight')
+      // Si la sección no tiene EXTRA, la aplica.
 
-     madres2.classList.toggle('panueloshadow')
-     madretest2.classList.toggle('hidden')
-     setTimeout(function() {$("#madretest2a").fadeIn(300) 
-     madretest2a.classList.remove('hidden')}, 100)
-     setTimeout(function() {$("#madretest2a").fadeIn(300) 
-     madretest2b.classList.remove('hidden')}, 300)
-     setTimeout(function() {$("#madretest2a").fadeIn(300) 
-     madretest2c.classList.remove('hidden')}, 500)
+      if (seccionmadrescheck == false && madretest1check == true && madretest3check == true) {
+        seccionmadres.classList.add('extraheight');
+        seccionmadres.classList.remove('revextraheight');
+    } 
     
+    // Si sólo está visible este texto, se saca el EXTRA
+    if (madretest1check == true && madretest2check == false && madretest3check == true) {
+        seccionmadres.classList.add('revextraheight');
+        seccionmadres.classList.remove('extraheight');
+    }
 
+    // Si se está mostrando alguno de los otros textos, se esconden (para mostrar sólo este)
+    
+    if (madretest1check == false) {
+        madretest1.classList.toggle('hidden')
+    
+    } 
 
+    if (madretest3check == false) {
+        madretest3.classList.toggle('hidden')
+    }
+    //Cada vez que se apreta el botón, se pone o saca la sombra del pañuelo
+    madres2.classList.toggle('panueloshadow')
 
+    // Si se apreta este pañuelo, se le sacan las sombras a los otros 2
+    if (panuelo1 == true) {
+        madres1.classList.remove('panueloshadow')
+            
+    } else if (panuelo3 == true) {
+        madres3.classList.remove('panueloshadow')
+    }
+
+    //Cada vez que se apreta el botón, se muestra o esconde el texto
+    setTimeout(function() {        
+        madretest2.classList.toggle('hidden')}, 500)
  });
+
+
+
+ madres3.addEventListener('click', function () {
+
+    let madretest1check = madretest1.classList.contains('hidden')
+    let madretest2check = madretest2.classList.contains('hidden')
+    let madretest3check = madretest3.classList.contains('hidden')
+    let panuelo1 = madres1.classList.contains('panueloshadow')
+    let panuelo2 = madres2.classList.contains('panueloshadow')
+    let panuelo3 = madres3.classList.contains('panueloshadow')
+    let seccionmadrescheck = seccionmadres.classList.contains('extraheight')
+
+    console.log(seccionmadrescheck)
+    console.log(madretest1check)
+    console.log(madretest2check)
+    console.log(madretest3check)
+
+    console.log(panuelo1)
+    console.log(panuelo2)
+    console.log(panuelo3)
+
+    // Si la sección no tiene EXTRA, la aplica.
+
+    if (seccionmadrescheck == false && madretest1check == true && madretest2check == true) {
+        seccionmadres.classList.add('extraheight');
+        seccionmadres.classList.remove('revextraheight');
+    } 
+    
+    // Si sólo está visible este texto, se saca el EXTRA
+    if (madretest1check == true && madretest2check == true && madretest3check == false) {
+        seccionmadres.classList.add('revextraheight');
+        seccionmadres.classList.remove('extraheight');
+    }
+
+    // Si se está mostrando alguno de los otros textos, se esconden (para mostrar sólo este)
+    
+    if (madretest2check == false) {
+        madretest2.classList.toggle('hidden')
+    }
+    if (madretest1check == false) {
+        madretest1.classList.toggle('hidden')
+    }
+
+    //Cada vez que se apreta el botón, se pone o saca la sombra del pañuelo
+    madres3.classList.toggle('panueloshadow')
+
+    // Si se apreta este pañuelo, se le sacan las sombras a los otros 2
+    if (panuelo2 == true) {
+        madres2.classList.remove('panueloshadow')
+            
+    } else if (panuelo1 == true) {
+        madres1.classList.remove('panueloshadow')
+    }
+
+    //Cada vez que se apreta el botón, se muestra o esconde el texto
+    setTimeout(function() {        
+        madretest3.classList.toggle('hidden')}, 500)
+
+
+
+});
 
 //ANIMACIONES
 $(() => {
