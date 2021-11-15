@@ -227,10 +227,6 @@ nav {
   transition: 1s all;
 }
 
-.madres-test-cont {
-  margin-top: 2rem;
-}
-
 .candidatos-container {
   text-align: center;
 }
@@ -455,7 +451,7 @@ nav {
 .img-testimonios {
   width: 10rem;
   height: 10rem;
-  border-radius: 100px;
+  border-radius: 200px;
   margin: 1rem;
   object-fit: cover;
   animation: borderglow 20s infinite;
@@ -593,9 +589,82 @@ nav {
   font-size: 1.8rem;
 }
 
+.glow-bl-v {
+  animation: glowblv 5s infinite;
+  animation-name: glowblv;
+}
+@keyframes glowblv {
+  0% {
+    color: #8a7aa3;
+  }
+  10% {
+    color: #8a7aa3;
+  }
+  20% {
+    color: white;
+  }
+  30% {
+    color: white;
+  }
+  40% {
+    color: #8a7aa3;
+  }
+  50% {
+    color: #8a7aa3;
+  }
+  60% {
+    color: white;
+  }
+  70% {
+    color: white;
+  }
+  80% {
+    color: #8a7aa3;
+  }
+  90% {
+    color: #8a7aa3;
+  }
+  100% {
+    color: #8a7aa3;
+  }
+}
+
+.extraheight {
+  height: 1250px;
+  animation: extraheight 0.5s;
+  animation-name: extraheight;
+}
+@keyframes extraheight {
+  0% {
+    height: 1050px;
+  }
+  100% {
+    height: 1250px;
+  }
+}
+
+.revextraheight {
+  height: 1000px;
+  animation: revextraheight 0.5s;
+  animation-name: revextraheight;
+}
+@keyframes revextraheight {
+  0% {
+    height: 1250px;
+  }
+  100% {
+    height: 1000px;
+  }
+}
+
+.panueloshadow {
+  filter: drop-shadow(5px 5px #74668a);
+}
+
 .panuelomadres {
   margin: 3rem 5rem;
   width: 5rem;
+  cursor: pointer;
   animation: panuelo 5s infinite;
   animation-name: panuelo;
 }
@@ -641,119 +710,14 @@ nav {
   justify-content: center;
 }
 
-.glow-bl-v {
-  animation: glowblv 5s infinite;
-  animation-name: glowblv;
-}
-@keyframes glowblv {
-  0% {
-    color: #8a7aa3;
-  }
-  10% {
-    color: #8a7aa3;
-  }
-  20% {
-    color: white;
-  }
-  30% {
-    color: white;
-  }
-  40% {
-    color: #8a7aa3;
-  }
-  50% {
-    color: #8a7aa3;
-  }
-  60% {
-    color: white;
-  }
-  70% {
-    color: white;
-  }
-  80% {
-    color: #8a7aa3;
-  }
-  90% {
-    color: #8a7aa3;
-  }
-  100% {
-    color: #8a7aa3;
-  }
+.madres-test-cont {
+  margin-top: 2rem;
+  text-align: center;
 }
 
-.extraheight {
-  height: 1550px;
-  animation: extraheight 0.5s;
-  animation-name: extraheight;
-}
-@keyframes extraheight {
-  0% {
-    height: 1050px;
-  }
-  5% {
-    height: 1075px;
-  }
-  10% {
-    height: 1100px;
-  }
-  15% {
-    height: 1125px;
-  }
-  20% {
-    height: 1150px;
-  }
-  25% {
-    height: 1175px;
-  }
-  30% {
-    height: 1200px;
-  }
-  35% {
-    height: 1225px;
-  }
-  40% {
-    height: 1250px;
-  }
-  45% {
-    height: 1275px;
-  }
-  50% {
-    height: 1300px;
-  }
-  55% {
-    height: 1325px;
-  }
-  60% {
-    height: 1350px;
-  }
-  65% {
-    height: 1375px;
-  }
-  70% {
-    height: 1400px;
-  }
-  75% {
-    height: 1425px;
-  }
-  80% {
-    height: 1450px;
-  }
-  85% {
-    height: 1475px;
-  }
-  90% {
-    height: 1500px;
-  }
-  95% {
-    height: 1525px;
-  }
-  100% {
-    height: 1550px;
-  }
-}
-
-.panueloshadow {
-  filter: drop-shadow(5px 5px #74668a);
+.madretest1c {
+  width: 100%;
+  padding: 0 0rem;
 }
 
 /* MIXINS */
@@ -769,7 +733,7 @@ nav {
   flex-wrap: wrap;
 }
 
-.seccion-blanca, .seccion-foto-1, .seccion-foto-madres, .candidatos-container, .botones-container, .masboton, .quiz-respuestas-cont, .row, .fila, .panuelocont {
+.seccion-blanca, .seccion-foto-1, .seccion-foto-madres, .candidatos-container, .botones-container, .masboton, .quiz-respuestas-cont, .row, .fila, .panuelocont, .madres-test-cont {
   display: flex;
   flex-direction: row;
   align-items: center;

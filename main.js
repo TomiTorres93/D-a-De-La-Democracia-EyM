@@ -159,26 +159,87 @@ const madretest2a = document.querySelector('#madretest2a')
 const madretest2b = document.querySelector('#madretest2b')
 const madretest2c = document.querySelector('#madretest2c')
 
+const madres3 = document.querySelector('#madres3')
+const madretest3 = document.querySelector('#madretest3')
+const madretest3a = document.querySelector('#madretest3a')
+const madretest3b = document.querySelector('#madretest3b')
+const madretest3c = document.querySelector('#madretest3c')
 
+
+
+console
 
 madres1.addEventListener('click', function () {
 
+    let madretest2check = madretest2.classList.contains('hidden')
+    let madretest3check = madretest3.classList.contains('hidden')
+    let seccionmadrescheck = seccionmadres.classList.contains('extraheight')
+
+    console.log(seccionmadrescheck)
+    console.log(madretest2check)
+    console.log(madretest3check)
+
+    if (seccionmadrescheck == false && madretest2check == true && madretest3check == true) {
+        seccionmadres.classList.add('extraheight');
+        seccionmadres.classList.remove('revextraheight');
+    } else if (seccionmadrescheck == true && madretest2check == true && madretest3check == true) {
+        seccionmadres.classList.add('revextraheight');
+        seccionmadres.classList.remove('extraheight');
+    }
+
+
+
     madres1.classList.toggle('panueloshadow')
-    seccionmadres.classList.toggle('extraheight')
     madretest1.classList.toggle('hidden')
-    setTimeout(function() {$("#cvot8").fadeIn(300) 
-    madretest1a.classList.remove('hidden')}, 100)
-    setTimeout(function() {$("#cvot8").fadeIn(300) 
-    madretest1b.classList.remove('hidden')}, 300)
-    setTimeout(function() {$("#cvot8").fadeIn(300) 
-    madretest1c.classList.remove('hidden')}, 500)
+
+    setTimeout(function() {$(
+    "#madretest1a").fadeIn(500) 
+    madretest1a.classList.toggle('hidden')
+    $("#madretest1a").fadeIn(500) 
+    madretest1b.classList.toggle('hidden')
+    $("#madretest1a").fadeIn(500) 
+    madretest1c.classList.toggle('hidden')}, 500)
+
     
-    let a = madretest2.classList.contains('.hidden')
+    if (madretest2check == false || madretest3check == false) {
+        madretest2.classList.toggle('hidden')
+        madretest3.classList.toggle('hidden')
+    }
 
-    console.log(a)
+    if (madretest2check == false || madretest3check == false) {
+        madretest2.classList.remove('panueloshadow')
+        madretest3.classList.remove('panueloshadow')
 
-
+    }
 });
+
+
+
+madres2.addEventListener('click', function () {
+    let madretest1check = madretest1.classList.contains('hidden')
+    let madretest3check = madretest3.classList.contains('hidden')
+
+    if (madretest1check == false || madretest3check == false) {
+        madretest1.classList.toggle('hidden')
+       madretest3.classList.toggle('hidden')
+   }
+
+   seccionmadres.classList.toggle('extraheight')
+   seccionmadres.classList.toggle('revextraheight')
+
+     madres2.classList.toggle('panueloshadow')
+     madretest2.classList.toggle('hidden')
+     setTimeout(function() {$("#madretest2a").fadeIn(300) 
+     madretest2a.classList.remove('hidden')}, 100)
+     setTimeout(function() {$("#madretest2a").fadeIn(300) 
+     madretest2b.classList.remove('hidden')}, 300)
+     setTimeout(function() {$("#madretest2a").fadeIn(300) 
+     madretest2c.classList.remove('hidden')}, 500)
+    
+
+
+
+ });
 
 //ANIMACIONES
 $(() => {
