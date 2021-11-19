@@ -445,6 +445,14 @@ animation-name: borderglow;
     background: none;
 }
 
+.carousel {
+    width: 80%;
+}
+
+.shadow {
+ filter: drop-shadow(15px 15px #8a7aa3);
+}
+
 .arrow-down {
     margin-top: 6rem;
     font-size: 4rem;
