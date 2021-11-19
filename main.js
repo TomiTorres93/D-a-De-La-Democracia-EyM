@@ -1,4 +1,13 @@
 
+function volveralinicio(a, b, c) {
+    
+    a.addEventListener('click', function () {
+    b.classList.add('hidden')
+    c.classList.remove('hidden')
+       
+})}
+
+
 
 //PREGUNTA 1
 
@@ -32,6 +41,8 @@ const seccionelec1 = document.querySelector('.seccionelec1')
 const seccionelec2 = document.querySelector('.seccionelec2')
 const seccionelec3 = document.querySelector('.seccionelec3')
 const seccionelec4 = document.querySelector('.seccionelec4')
+const seccionelec5 = document.querySelector('.seccionelec5')
+const seccionelec6 = document.querySelector('.seccionelec6')
 const vot1 = document.querySelector('#vot1')
 const vot2 = document.querySelector('#vot2')
 const vot3 = document.querySelector('#vot3')
@@ -59,9 +70,12 @@ const cvot5 = document.querySelector('#cvot5')
 const cvot6 = document.querySelector('#cvot6')
 const cvot7 = document.querySelector('#cvot7')
 const cvot8 = document.querySelector('#cvot8')
+const masboton = document.querySelector('#masboton')
 const masboton2 = document.querySelector('#masboton2')
 const masboton3 = document.querySelector('#masboton3')
 const masboton4 = document.querySelector('#masboton4')
+const masboton5 = document.querySelector('#masboton5')
+const masboton6 = document.querySelector('#masboton6')
 
 const id2 = document.querySelector('#id2')
 masboton.addEventListener('click', function () {
@@ -85,6 +99,12 @@ masboton.addEventListener('click', function () {
     setTimeout(function() {
         $("#masboton2").fadeIn(300)
         masboton2.classList.remove('hidden')}, 3500)
+
+    setTimeout(function() {
+    $("#backcont1").fadeIn(300)
+    backcont1.classList.remove('hidden')
+    }, 3600)
+     
 });
 
 masboton2.addEventListener('click', function () {
@@ -110,6 +130,11 @@ masboton2.addEventListener('click', function () {
     setTimeout(function() {
         $("#masboton3").fadeIn(300)
         masboton3.classList.remove('hidden')}, 2800)
+
+        setTimeout(function() {
+        $("#backcont2").fadeIn(300)
+        backcont2.classList.remove('hidden')
+        }, 2900)
 });
 
 masboton3.addEventListener('click', function () {
@@ -136,11 +161,42 @@ masboton3.addEventListener('click', function () {
     setTimeout(function() {
         $("#masboton4").fadeIn(300)
         masboton4.classList.remove('hidden')}, 2800)
+
+        setTimeout(function() {
+            $("#backcont3").fadeIn(300)
+            backcont3.classList.remove('hidden')
+            }, 2900)
 });
 
 masboton4.addEventListener('click', function () {
     seccionelec4.classList.remove('hidden')
     seccionelec3.classList.add('hidden')
+});
+
+
+masboton4.addEventListener('click', function () {
+  
+    seccionelec4.classList.add('hidden')
+    seccionelec5.classList.remove('hidden')
+
+    setTimeout(function() {
+        $("#masboton4").fadeIn(300)
+        masboton5.classList.remove('hidden')}, 1000)
+
+        setTimeout(function() {
+            $("#backcont4").fadeIn(300)
+            backcont4.classList.remove('hidden')
+            }, 1200)
+});
+
+masboton5.addEventListener('click', function () {
+    seccionelec5.classList.remove('hidden')
+    seccionelec4.classList.add('hidden')
+
+    setTimeout(function() {
+        $("#backcont4").fadeIn(300)
+        backcont4.classList.remove('hidden')
+        }, 1200)
 });
 
 // TESTIMONIOS DE MADRES
@@ -407,5 +463,200 @@ $(() => {
 })
 
 
+$(() => {
+
+    $("#masboton4").click(() => {
+    $("#fadeelec").fadeOut(500)
+    $("#fadeelec").fadeIn(500)
+    })
+    
+})
+
 
 // setTimeout(function() {}, 100)
+
+
+////////////// 
+// BOTONES ATRÁS
+
+const back2 = document.querySelector('#back2')
+const back1 = document.querySelector('#back1')
+const back3 = document.querySelector('#back3')
+const back4 = document.querySelector('#back4')
+const back5 = document.querySelector('#back5')
+const back6 = document.querySelector('#back6')
+const back7 = document.querySelector('#back7')
+const back8 = document.querySelector('#back8')
+const back9 = document.querySelector('#back9')
+const back10 = document.querySelector('#back10')
+
+const backcont2 = document.querySelector('#backcont2')
+const backcont1 = document.querySelector('#backcont1')
+const backcont3 = document.querySelector('#backcont3')
+const backcont4 = document.querySelector('#backcont4')
+const backcont5 = document.querySelector('#backcont5')
+const backcont6 = document.querySelector('#backcont6')
+const backcont7 = document.querySelector('#backcont7')
+const backcont8 = document.querySelector('#backcont8')
+const backcont9 = document.querySelector('#backcont9')
+const backcont10 = document.querySelector('#backcont10')
+
+const back1mes = document.querySelector('#back1mes')
+const back2mes = document.querySelector('#back2mes')
+const back3mes = document.querySelector('#back3mes')
+const back4mes = document.querySelector('#back4mes')
+const back5mes = document.querySelector('#back5mes')
+const back6mes = document.querySelector('#back6mes')
+const back7mes = document.querySelector('#back7mes')
+const back8mes = document.querySelector('#back8mes')
+const back9mes = document.querySelector('#back9mes')
+const back10mes = document.querySelector('#back10mes')
+
+const volveralinicio1 = volveralinicio(back2, seccionelec2, seccionelec1);
+const volveralinicio2 = volveralinicio(back3, seccionelec3, seccionelec1);
+const volveralinicio3 = volveralinicio(back5, seccionelec4, seccionelec1);
+const volveralinicio4 = volveralinicio(back7, seccionelec5, seccionelec1);
+const volveralinicio5 = volveralinicio(back4, seccionelec3, seccionelec2);
+const volveralinicio6 = volveralinicio(back6, seccionelec4, seccionelec3);
+const volveralinicio7 = volveralinicio(back8, seccionelec5, seccionelec4);
+
+back2.addEventListener('mouseover', function () {
+    setTimeout(function() {
+        $("#back2mes").fadeIn(500)
+    }, 200)
+    setTimeout(function() {
+        back2mes.classList.remove('hidden')
+    }, 300)
+    
+
+    setTimeout(function() {
+        $("#back2mes").fadeOut(500)
+    }, 2000)
+
+    setTimeout(function() {
+        back2mes.classList.add('hidden')
+    }, 2500)
+});
+
+
+back3.addEventListener('mouseover', function () {
+    setTimeout(function() {
+        $("#back3mes").fadeIn(500)
+    }, 200)
+    setTimeout(function() {
+        back3mes.classList.remove('hidden')
+    }, 300)
+    
+
+    setTimeout(function() {
+        $("#back3mes").fadeOut(500)
+    }, 2000)
+
+    setTimeout(function() {
+        back3mes.classList.add('hidden')
+    }, 2500)
+});
+
+back4.addEventListener('mouseover', function () {
+    setTimeout(function() {
+        $("#back4mes").fadeIn(500)
+    }, 200)
+    setTimeout(function() {
+        back4mes.classList.remove('hidden')
+    }, 300)
+    
+
+    setTimeout(function() {
+        $("#back4mes").fadeOut(500)
+    }, 2000)
+
+    setTimeout(function() {
+        back4mes.classList.add('hidden')
+    }, 2500)
+});
+
+back5.addEventListener('mouseover', function () {
+    setTimeout(function() {
+        $("#back5mes").fadeIn(500)
+    }, 200)
+    setTimeout(function() {
+        back5mes.classList.remove('hidden')
+    }, 300)
+    
+
+    setTimeout(function() {
+        $("#back5mes").fadeOut(500)
+    }, 2000)
+
+    setTimeout(function() {
+        back5mes.classList.add('hidden')
+    }, 2500)
+});
+
+back6.addEventListener('mouseover', function () {
+    setTimeout(function() {
+        $("#back6mes").fadeIn(500)
+    }, 200)
+    setTimeout(function() {
+        back6mes.classList.remove('hidden')
+    }, 300)
+    
+
+    setTimeout(function() {
+        $("#back6mes").fadeOut(500)
+    }, 2000)
+
+    setTimeout(function() {
+        back6mes.classList.add('hidden')
+    }, 2500)
+});
+
+back7.addEventListener('mouseover', function () {
+    setTimeout(function() {
+        $("#back7mes").fadeIn(500)
+    }, 200)
+    setTimeout(function() {
+        back7mes.classList.remove('hidden')
+    }, 300)
+    
+
+    setTimeout(function() {
+        $("#back7mes").fadeOut(500)
+    }, 2000)
+
+    setTimeout(function() {
+        back7mes.classList.add('hidden')
+    }, 2500)
+});
+
+back8.addEventListener('mouseover', function () {
+    setTimeout(function() {
+        $("#back8mes").fadeIn(500)
+    }, 200)
+    setTimeout(function() {
+        back8mes.classList.remove('hidden')
+    }, 300)
+    
+
+    setTimeout(function() {
+        $("#back8mes").fadeOut(500)
+    }, 2000)
+
+    setTimeout(function() {
+        back8mes.classList.add('hidden')
+    }, 2500)
+});
+
+
+// TESTIMONIOS DE MADRES
+
+
+
+
+
+
+
+console.log(volveralinicio1)
+
+
+

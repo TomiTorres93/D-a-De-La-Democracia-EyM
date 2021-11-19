@@ -38,6 +38,7 @@ nav {
     background-color: nth($color, 3);
     color: white;
     overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .seccion-blanca {
@@ -84,6 +85,18 @@ nav {
     text-align: center;
     height: 1000px;
     background-image: url('../images/madres.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 1s all;    
+}
+
+.seccion-foto-urna {
+    @extend %flexbox-row;
+    text-align: center;
+    height: 1000px;
+    background-image: url('../images/urnavotacion.jpg');
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -180,6 +193,31 @@ nav {
     transition: 0.5s all;
     cursor: pointer;
     align-items: center;
+}
+
+
+
+
+.backmes2 {
+    color: white;
+    background-color: #a390bd;
+    padding: 0.5rem;
+    width: 10rem;
+    border-radius: 10px 10px 10px 2px;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.backmes {
+    color: white;
+    background-color: #a390bd;
+    padding: 0.5rem;
+    width: 10rem;
+    border-radius: 10px 10px 10px 2px;
+    position: absolute;
+    bottom: 2rem;
+    left: 4rem;
 }
 
 .recuadrov {
@@ -476,6 +514,15 @@ animation-name: borderglow;
     bottom: 1rem;
 }
 
+.down {
+    position: relative;
+    top: 4rem;
+}
+
+.bigger {
+font-size: 1rem;
+}
+
 // ALINEACIÓN
 
 .columna {
@@ -684,4 +731,183 @@ animation-name: borderglow;
 .madretestpar {
     width: 100%;
     padding: 0 0rem;
+}
+
+
+
+////// pie chart
+
+
+
+  .pie {
+    width: 400px;
+    height: 400px;
+    background-image: conic-gradient(
+    #db7b7b 51.75%, 
+    #8abbcf 51.75% 91.91%, 
+    #649173 91.91% 94.24%, 
+    #292929 94.24% 95.43%,
+    #a390bd 95.43% 96.15%,
+    #b6b6b6 96.15% 100% );
+    border-radius: 50%;
+    margin: 2rem;
+  }
+
+  .ucr {
+      background-color: #db7b7b;
+      color: white;
+      font-size: 1.2rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 10px;
+      transition: 0.5s all;
+      &:hover {
+        border-radius: 10px 10px 10px 2px;
+        box-shadow: 1px 1px 3px rgb(49, 49, 49, 50%);
+      }
+  }
+  .pj {
+    background-color: #8abbcf;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    transition: 0.5s all;
+
+    &:hover {
+        border-radius: 10px 10px 10px 2px;
+        box-shadow: 1px 1px 3px rgb(49, 49, 49, 50%);
+      }
+    }
+
+.pi {
+    background-color: #649173;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    transition: 0.5s all;
+
+    &:hover {
+        border-radius: 10px 10px 10px 2px;
+        box-shadow: 1px 1px 3px rgb(49, 49, 49, 50%);
+      }
+}
+
+.mid {
+    background-color: #292929;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    transition: 0.5s all;
+
+    &:hover {
+        border-radius: 10px 10px 10px 2px;
+        box-shadow: 1px 1px 3px rgb(49, 49, 49, 50%);
+      }
+}
+
+.af {
+    background-color: #a390bd;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    transition: 0.5s all;
+
+    &:hover {
+        border-radius: 10px 10px 10px 2px;
+        box-shadow: 1px 1px 3px rgb(49, 49, 49, 50%);
+      }
+}
+
+.otros {
+    background-color: #b6b6b6;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    transition: 0.5s all;
+
+    &:hover {
+        border-radius: 10px 10px 10px 2px;
+        box-shadow: 1px 1px 3px rgb(49, 49, 49, 50%);
+      }
+}
+
+  .pie-conteiner {
+    @extend %flexbox-row;
+    text-align: center;
+    
+  }
+
+  .fontplus {
+    font-size: 1.2rem;
+  }
+
+.boton-atras-cont {
+    @extend %flexbox-row;
+    text-align: center;
+    position: relative;
+    top: 60%;
+    right: 85%;
+}
+
+
+
+  .boton-inicio {
+    background-color: #a390bd;
+    margin: 0.3rem;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s all;
+    width: 2.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #8a7aa3;
+        box-shadow: 2px 2px #a390bd;
+        transform: translateX(-0.2rem);
+
+    }
+}
+
+.boton-atras {
+    background-color: #a390bd;
+    margin: 0.3rem;
+    color: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    transition: 0.5s all;
+    cursor: pointer;
+    width: 2.2rem;
+
+
+    &:hover {
+        background-color: #8a7aa3;
+        box-shadow: 2px 2px #a390bd;
+        transform: translateX(-0.2rem);
+
+    }
+}
+
+.cont2 {
+    top: 25%;
+    right: 100%;
+}
+
+.cont3 {
+    top: 30%;
+    right: 115%;
+}
+
+.cont4 {
+    top: 10%;
+    right: 70%;
+}
+
+.masboton5 {
+    position: relative;
+    bottom: 10rem;
 }

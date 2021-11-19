@@ -30,6 +30,12 @@
   <meta name="keywords"
     content="Educación memoria GCBA Ciudad de Buenos Aires colegio escuela violencia infanto juvenil niños niñas alumnos alumnas aula">
 
+<!-- SCRIPT PARA GRÁFICO DE TORTA -->
+
+<script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+<script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+
+
   <!-- OPEN GRAPH -->
   <meta property="og:tittle" content="Educación y Memoria">
   <meta property="og:type" content="website">
@@ -84,7 +90,7 @@
 <div class="col-6"></div>
 <div class="col-6">
   <p class="recuadro">
-  <b> 10/12/2021 </b>
+  <b> 10/12/1983 </b>
   <br><br>
   El presidente electo <b>Raúl Alfosín</b> saluda desde el balcón de la Casa Rosada a una Plaza de Mayo repleta.  
 </p>
@@ -103,7 +109,6 @@
   <p class="parrafo blanco"> De estos comicios, los primeros desde 1974, participaron 24 candidatos, pero dos concentraron casi el 92% de los votos. Entre 1976 y 1983, durante la dictadura militar que gobiernó de facto, Argentina tuvo cuatro presidentes que <b>no fueron elegidos por el pueblo en las urnas</b>: Jorge Rafael <b>Videla</b>, Roberto <b>Viola</b>, Leopoldo Fortunato <b>Galtieri</b> y Reynaldo <b>Bignone</b>.
   </p>
 
-<!-- Botón para seguir a los datos de las elecciones -->
 
   <div class="masboton" id="masboton">
     <img class="arrow" src="images\arrow-lighning.png" alt="urna-voto">
@@ -128,6 +133,15 @@
     <span class="hidden" id="vot11">|</span>
   </div>
 
+  <!-- Botón para seguir a los datos de las elecciones -->
+<div class="boton-atras-cont hidden" id="backcont1">
+  <!-- VOLVER AL INICIO -->
+
+<img class="boton-inicio" src="images\back2.png" alt="back2" id="back2">
+<p class="backmes2 hidden" id="back2mes">Volver al inicio</p>
+
+</div>
+
 <!-- Botón para seguir a los datos de las elecciones -->
 
   <div class="masboton hidden" id="masboton2">
@@ -138,7 +152,7 @@
 
 
 <!-- PARTE 3 -->
-<div class="columna hidden seccionelec3" id="seccionelec3">  
+<div class="columna hidden seccionelec3" id="seccionelec2">  
   <p class="titulo blanco">Raúl Alfonsín</p>
   <p class="subtit id4 glow-bl-v">Unión Cívica Radical (UCR)</p>
   <div class="titulo blanco id3" id="2numero"> 
@@ -153,7 +167,15 @@
   </div>
   <p class="hidden detalle-text blanco id4" id="bvot8">7.724.559 votos</p>
 
-
+  <!-- Botón para seguir a los datos de las elecciones -->
+  <div class="boton-atras-cont cont2 hidden" id="backcont2">
+    <!-- VOLVER AL INICIO -->
+  <img class="boton-inicio" src="images\back2.png" alt="back3" id="back3"> 
+  <p class="backmes2 hidden" id="back3mes">Volver al inicio</p>
+  
+  <img class="boton-atras" src="images\back1.png" alt="back4" id="back4">
+  <p class="backmes hidden" id="back4mes">Volver atrás</p>
+  </div>
 <!-- Botón para seguir a los datos de las elecciones -->
 
   <div class="masboton hidden up" id="masboton3">
@@ -164,7 +186,7 @@
 
 
 <!-- PARTE 4 -->
-<div class="columna hidden seccionelec4" id="seccionelec4">  
+<div class="columna hidden seccionelec4" id="seccionelec3">  
   <p class="titulo blanco">Ítalo Luder</p>
   <p class="subtit id4 glow-bl-v">Partido Justicialista (PJ)</p>
   <div class="titulo blanco id3" id="2numero"> 
@@ -178,27 +200,130 @@
   </div>
   <p class="hidden detalle-text blanco id4" id="cvot8">5.995.402 votos</p>
 
+    <!-- Botón para seguir a los datos de las elecciones -->
+    <div class="boton-atras-cont cont3 hidden" id="backcont3">
+      <!-- VOLVER AL INICIO -->
+    <img class="boton-inicio" src="images\back2.png" alt="back5" id="back5"> 
+    <p class="backmes2 hidden" id="back5mes">Volver al inicio</p>
+    
+    <img class="boton-atras" src="images\back1.png" alt="back6" id="back6">
+    <p class="backmes hidden" id="back6mes">Volver atrás</p>
+    </div>
+
 <!-- Botón para seguir a los datos de las elecciones -->
 
-  <div class="masboton hidden up" id="masboton4">
-    <a class="format" href="#madres"> <p class="arrow-down blanco" >︾</p></a>
+<div class="masboton hidden up" id="masboton4">
+  <img class="arrow" src="images\arrow-lighning.png" alt="urna-voto">
+</div>
+</div>
+
+<!-- PARTE 5 - GRÁFICO DE TORTA -->
+<div class="columna hidden seccionelec5" id="seccionelec5">  
+    <!-- PARTE 5 - GRÁFICO DE TORTA -->
+    <div class="columna seccionelec5" id="seccionelec5">  
+      <p class="titulo blanco">Resultados</p>
+      <div class="pie-conteiner">
+      <div class="pie"></div>
+      <div>
+        <p class="detalle-text ucr">Raúl Alfonsín (UCR): <b>51,75%</b></p>
+        <p class="detalle-text pj">Ítalo Luder (PJ): <b>40,16%</b></p>
+        <p class="detalle-text pi">Oscar Alende (Partido Intransigente): <b>2,33%</b></p>
+        <p class="detalle-text mid">Rogelio Frigerio (MID): <b>1,19%</b></p>
+        <p class="detalle-text af">Francisco Manrique (Alianza Federal): <b>0,72%</b></p>
+        <p class="detalle-text otros">Otros partidos: <b>3,85%</b></p>
+      </div>
+    </div>
   </div>
+
+    <!-- Botón para seguir a los datos de las elecciones -->
+    <div class="boton-atras-cont cont4 hidden" id="backcont4">
+      <!-- VOLVER AL INICIO -->
+    <img class="boton-inicio " src="images\back2.png" alt="back7" id="back7"> 
+    <p class="backmes2 hidden" id="back7mes">Volver al inicio</p>
+    
+    <img class="boton-atras" src="images\back1.png" alt="back8" id="back8">
+    <p class="backmes hidden" id="back8mes">Volver atrás</p>
+    </div>
+
+<!-- Botón para seguir a los datos de las elecciones -->
+
+<div class="masboton hidden up" id="masboton5">
+  <a class="format" href="#presidentes"> <p class="arrow-down blanco" >︾</p></a>
+</div>
 </div>
 </section>
 
-<!-- SECCIÓN FOTO - MADRES -->
-
-<section class="seccion-foto-madres"  id="madres">
+<!-- FOTO URNA -->
+<section class="seccion-foto-urna">
+  <div class="col-1"></div>
   <div class="col-6">
     <p class="recuadro">
-    <b> La Ronda de los Jueves</b>
+    <b>Cada voto es una victoria de la democracia</b>
     <br><br>
-    Durante la dictadura estaba prohibido reunirse en espacios públicos y las Fuerzas reprimían las concentraciones de gente. Obligaban a la gente a "circular". Así nació <b>La Ronda de los Jueves</b>: caminando alrededor de la Pirámide de Mayo, las Madres de Plaza de Mayo pedían por la vida de sus hijas e hijos desaparecidos.
+    Durante muchos años, esta imagen no pudo ser posible. La continuidad democrática es indispensable para que tengamos garantizados nuestros derechos.
   </p>
   </div>
-  <div class="col-6"></div>
-  
-  </section>
+  <div class="col-4"></div>
+</section>
+<!-- IMPORTANCIA DE LAS ELECCIONES -->
+<section class="seccion-blanca">
+  <p class="titulo">Las elecciones de 1983 fueron el inicio...</p>
+  <p class="parrafo">...de un período democrático que ya lleva <b>38 años.</b> Desde entonces, 11 presidentes de distintas banderas políticas pasaron por la Casa Rosada. Más allá de algunas transiciones conflictivas, como las de diciembre de 2001, cuando tuvimos tres presidentes en una semana debido a la crisis económica y social, es importante destacar que todos fueron elegidos por el pueblo <b>a través del voto</b>. Algo que hoy nos parece lo más normal, como un domingo de elecciones, estuvo prohibido durante la última dictadura (1976-1983). <br><br> <b>¡Por eso hay que valorar tanto y defender todos los días a nuestra democracia!</b></p>
+
+  <!-- Botón para seguir a la galería de presidentes -->
+
+<div class="masboton columna" id="masboton5">
+  <p class="detalle-text color1 down bigger">Mirá la galería con cada presidente electo <br>desde que recuperamos nuestra democracia</p>
+  <a class="format" href="#galería"> <p class="arrow-down color1" >︾</p></a>
+</div>
+</section>
+
+
+<!-- GALERÍA DE PRESIDENTES -->
+
+<section class="seccion-color">
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images\alfonsin.jpg" class="d-block w-100" alt="Raúl Alfonsín">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Raúl Alfonsín</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images\menem.jpg" class="d-block w-100" alt="Carlos Menem">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</section>
+
 
 <!-- PARTE 4 -->
 
@@ -320,12 +445,21 @@ Libero repudiandae perspiciatis tempora quisquam iure, numquam quibusdam dolore 
 </div>
 
 
+<!-- SECCIÓN FOTO - MADRES -->
+
+<section class="seccion-foto-madres"  id="madres">
+  <div class="col-6">
+    <p class="recuadro">
+    <b> La Ronda de los Jueves</b>
+    <br><br>
+    Durante la dictadura estaba prohibido reunirse en espacios públicos y las Fuerzas reprimían las concentraciones de gente. Obligaban a la gente a "circular". Así nació <b>La Ronda de los Jueves</b>: caminando alrededor de la Pirámide de Mayo, las Madres de Plaza de Mayo pedían por la vida de sus hijas e hijos desaparecidos.
+  </p>
+  </div>
+  <div class="col-6"></div>
+  
+  </section>
 
 
-
-<p class="parrafo hidden">
-130 ya fueron recuperados.
-</p>
 
 </section>
 
@@ -343,8 +477,11 @@ Libero repudiandae perspiciatis tempora quisquam iure, numquam quibusdam dolore 
       <button id="respcolor4" class="quiz-respuestas incorrecta3">20 DE DICIEMBRE</button>
   </div>
 
-</section>
 
+</section>
+<section class="seccion-blanca">
+
+</section>
 
 
   <footer>
