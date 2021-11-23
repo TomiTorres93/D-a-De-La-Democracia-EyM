@@ -41,12 +41,27 @@ nav {
     overflow-y: hidden;
 }
 
+.seccion-nietos {
+    @extend %flexbox-column;
+    text-align: center;
+    height: 1000px;
+    padding: 100px 5%;
+    background-image: url('../images/nietes.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
 .seccion-blanca {
     @extend %flexbox-row;
     text-align: center;
     justify-content: center;
     height: 1000px;
-    padding: 200px 5%;
+    padding: 100px 5%;
     background-color: white;
     color: nth($color, 1);
 }
@@ -156,12 +171,8 @@ nav {
     padding: 5%;
     color: white;
     background-color: nth($color, 3);
-    opacity: 70%;
     transition: 1s all;
 
-    &:hover {
-        opacity: 100%;
-    }
 }
 
 .botones-container {
@@ -196,8 +207,52 @@ nav {
 }
 
 
+.masboton2 {
+    color: white;
+    background: none;
+    border: none;
+    transition: 0.5s all;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.imgorganismosddhh {
+    width: 15rem;
+    margin: 2rem;
+    transition: 0.5s all;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.exdetenidos {
+    border: 10px white solid;
+
+}
+
+.cels {
+    border: 10px white solid;
+}
+
+.apdh {
+    background: black;
+}
+
+.historias {
+    background: black;
+}
 
 
+.bru {
+    border: 10px white solid;
+}
+
+.correpi {
+    width: 20rem;
+}
 .backmes2 {
     color: white;
     background-color: #a390bd;
@@ -248,6 +303,27 @@ nav {
     background-color: nth($color, 1);
 }
 
+.botonlinks{
+    text-decoration: none;
+    box-shadow: 2px 2px nth($color, 1);
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 2rem;
+    color: nth($color, 3);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: 0.7s all;
+
+    &:hover {
+        color: white;
+        background-color: nth($color, 1);
+        box-shadow: 2px 2px white;
+
+
+    }
+}
 // COLORES
 
 .blanco {
@@ -319,6 +395,16 @@ nav {
 .calendario {
     width: 10%;
     margin-bottom: 2rem;
+}
+
+.rondagif {
+    width: 30rem;
+    filter: drop-shadow(1px 1px 250px #74668a);
+}
+
+.rondacont {
+    @extend %flexbox-row;
+    text-align: center;
 }
 
 .urna {
@@ -453,7 +539,7 @@ animation-name: borderglow;
  filter: drop-shadow(15px 15px #8a7aa3);
 }
 
-.arrow-down {
+.arrow-down2 {
     margin-top: 6rem;
     font-size: 4rem;
 
@@ -512,6 +598,63 @@ animation-name: borderglow;
 }
 }
 
+.arrow-down3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    animation: upanddown2 5s infinite;
+    animation-name: upanddown2;
+
+    @keyframes upanddown2 {
+
+        0% {
+            transform: translateY(5px);
+        }
+
+        10% {
+            transform: translateY(-5px);
+       }
+
+        20% {
+            transform: translateY(5px);
+               }
+
+        30% {
+            transform: translateY(-5px);
+       }
+
+        40% {
+            transform: translateY(5px);
+        }
+
+        50% {
+            transform: translateY(-5px);
+       }
+        
+        60% {
+            transform: translateY(5px);
+        }
+
+        70% {
+            transform: translateY(-5px);
+       }
+
+        80% {
+            transform: translateY(5px);
+        }
+
+        90% {
+            transform: translateY(-5px);
+       }
+        
+        100% {
+            transform: translateY(5px);
+        }
+}
+
+&:hover {
+    color: whitesmoke;
+}
+}
 
 .up {
     position: relative;
@@ -532,15 +675,17 @@ animation-name: borderglow;
 font-size: 1rem;
 }
 
+.botoncontainerabuelas {
+    margin-top: 5rem;
+    background-color: nth($color, 1);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
 // ALINEACIÓN
 
 .columna {
     @extend %flexbox-column;
-    text-align: center;
-}
-
-.row {
-    @extend %flexbox-row;
     text-align: center;
     justify-content: center;
 }
@@ -919,4 +1064,9 @@ font-size: 1rem;
 .masboton5 {
     position: relative;
     bottom: 10rem;
+}
+
+
+.carousel-caption {
+    text-shadow: 5px 5px 5px black;
 }

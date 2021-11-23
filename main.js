@@ -402,23 +402,277 @@ madres2.addEventListener('click', function () {
 
 });
 
+// TESTIMONIOS DE abuelas
+const abuelas1 = document.querySelector('#abuelas1')
+const abuelatest1 = document.querySelector('#abuelatest1')
+const abuelatest1a = document.querySelector('#abuelatest1a')
+const abuelatest1b = document.querySelector('#abuelatest1b')
+const abuelatest1c = document.querySelector('#abuelatest1c')
+
+const abuelas2 = document.querySelector('#abuelas2')
+const abuelatest2 = document.querySelector('#abuelatest2')
+const abuelatest2a = document.querySelector('#abuelatest2a')
+const abuelatest2b = document.querySelector('#abuelatest2b')
+const abuelatest2c = document.querySelector('#abuelatest2c')
+
+const abuelas3 = document.querySelector('#abuelas3')
+const abuelatest3 = document.querySelector('#abuelatest3')
+const abuelatest3a = document.querySelector('#abuelatest3a')
+const abuelatest3b = document.querySelector('#abuelatest3b')
+const abuelatest3c = document.querySelector('#abuelatest3c')
+
+
+
+
+console
+
+abuelas1.addEventListener('click', function () {
+
+    let abuelatest1check = abuelatest1.classList.contains('hidden')
+    let abuelatest2check = abuelatest2.classList.contains('hidden')
+    let abuelatest3check = abuelatest3.classList.contains('hidden')
+    let panuelo1 = abuelas1.classList.contains('panueloshadow')
+    let panuelo2 = abuelas2.classList.contains('panueloshadow')
+    let panuelo3 = abuelas3.classList.contains('panueloshadow')
+    let seccionmadrescheck = seccionmadres.classList.contains('extraheight')
+
+    console.log(seccionmadrescheck)
+    console.log(abuelatest1check)
+    console.log(abuelatest2check)
+    console.log(abuelatest3check)
+
+    console.log(panuelo1)
+    console.log(panuelo2)
+    console.log(panuelo3)
+
+    // Si la sección no tiene EXTRA, la aplica.
+
+    if (seccionmadrescheck == false && abuelatest2check == true && abuelatest3check == true) {
+        seccionmadres.classList.add('extraheight');
+        seccionmadres.classList.remove('revextraheight');
+    } 
+    
+    // Si sólo está visible este texto, se saca el EXTRA
+    if (abuelatest1check == false && abuelatest2check == true && abuelatest3check == true) {
+        seccionmadres.classList.add('revextraheight');
+        seccionmadres.classList.remove('extraheight');
+    }
+
+    // Si se está mostrando alguno de los otros textos, se esconden (para mostrar sólo este)
+    
+    if (abuelatest2check == false) {
+        abuelatest2.classList.toggle('hidden')
+    }
+    if (abuelatest3check == false) {
+        abuelatest3.classList.toggle('hidden')
+    }
+
+    //Cada vez que se aprieta el botón, se pone o saca la sombra del pañuelo
+    abuelas1.classList.toggle('panueloshadow')
+
+    // Si se aprieta este pañuelo, se le sacan las sombras a los otros 2
+    if (panuelo2 == true) {
+        abuelas2.classList.remove('panueloshadow')
+            
+    } else if (panuelo3 == true) {
+        abuelas3.classList.remove('panueloshadow')
+    }
+
+    //Cada vez que se aprieta el botón, se muestra o esconde el texto
+    setTimeout(function() {        
+        abuelatest1.classList.toggle('hidden')}, 500)
+
+
+
+});
+
+
+
+abuelas2.addEventListener('click', function () {
+
+    let abuelatest1check = abuelatest1.classList.contains('hidden')
+    let abuelatest2check = abuelatest2.classList.contains('hidden')
+    let abuelatest3check = abuelatest3.classList.contains('hidden')
+    let panuelo1 = abuelas1.classList.contains('panueloshadow')
+    let panuelo2 = abuelas2.classList.contains('panueloshadow')
+    let panuelo3 = abuelas3.classList.contains('panueloshadow')
+    let seccionmadrescheck = seccionmadres.classList.contains('extraheight')
+
+    console.log(seccionmadrescheck)
+    console.log(abuelatest1check)
+    console.log(abuelatest2check)
+    console.log(abuelatest3check)
+
+    console.log(panuelo1)
+    console.log(panuelo2)
+    console.log(panuelo3)
+
+      // Si la sección no tiene EXTRA, la aplica.
+
+      if (seccionmadrescheck == false && abuelatest1check == true && abuelatest3check == true) {
+        seccionmadres.classList.add('extraheight');
+        seccionmadres.classList.remove('revextraheight');
+    } 
+    
+    // Si sólo está visible este texto, se saca el EXTRA
+    if (abuelatest1check == true && abuelatest2check == false && abuelatest3check == true) {
+        seccionmadres.classList.add('revextraheight');
+        seccionmadres.classList.remove('extraheight');
+    }
+
+    // Si se está mostrando alguno de los otros textos, se esconden (para mostrar sólo este)
+    
+    if (abuelatest1check == false) {
+        abuelatest1.classList.toggle('hidden')
+    
+    } 
+
+    if (abuelatest3check == false) {
+        abuelatest3.classList.toggle('hidden')
+    }
+    //Cada vez que se aprieta el botón, se pone o saca la sombra del pañuelo
+    abuelas2.classList.toggle('panueloshadow')
+
+    // Si se aprieta este pañuelo, se le sacan las sombras a los otros 2
+    if (panuelo1 == true) {
+        abuelas1.classList.remove('panueloshadow')
+            
+    } else if (panuelo3 == true) {
+        abuelas3.classList.remove('panueloshadow')
+    }
+
+    //Cada vez que se aprieta el botón, se muestra o esconde el texto
+    setTimeout(function() {        
+        abuelatest2.classList.toggle('hidden')}, 500)
+ });
+
+
+
+ abuelas3.addEventListener('click', function () {
+
+    let abuelatest1check = abuelatest1.classList.contains('hidden')
+    let abuelatest2check = abuelatest2.classList.contains('hidden')
+    let abuelatest3check = abuelatest3.classList.contains('hidden')
+    let panuelo1 = abuelas1.classList.contains('panueloshadow')
+    let panuelo2 = abuelas2.classList.contains('panueloshadow')
+    let panuelo3 = abuelas3.classList.contains('panueloshadow')
+    let seccionmadrescheck = seccionmadres.classList.contains('extraheight')
+
+    console.log(seccionmadrescheck)
+    console.log(abuelatest1check)
+    console.log(abuelatest2check)
+    console.log(abuelatest3check)
+
+    console.log(panuelo1)
+    console.log(panuelo2)
+    console.log(panuelo3)
+
+    // Si la sección no tiene EXTRA, la aplica.
+
+    if (seccionmadrescheck == false && abuelatest1check == true && abuelatest2check == true) {
+        seccionmadres.classList.add('extraheight');
+        seccionmadres.classList.remove('revextraheight');
+    } 
+    
+    // Si sólo está visible este texto, se saca el EXTRA
+    if (abuelatest1check == true && abuelatest2check == true && abuelatest3check == false) {
+        seccionmadres.classList.add('revextraheight');
+        seccionmadres.classList.remove('extraheight');
+    }
+
+    // Si se está mostrando alguno de los otros textos, se esconden (para mostrar sólo este)
+    
+    if (abuelatest2check == false) {
+        abuelatest2.classList.toggle('hidden')
+    }
+    if (abuelatest1check == false) {
+        abuelatest1.classList.toggle('hidden')
+    }
+
+    //Cada vez que se aprieta el botón, se pone o saca la sombra del pañuelo
+    abuelas3.classList.toggle('panueloshadow')
+
+    // Si se aprieta este pañuelo, se le sacan las sombras a los otros 2
+    if (panuelo2 == true) {
+        abuelas2.classList.remove('panueloshadow')
+            
+    } else if (panuelo1 == true) {
+        abuelas1.classList.remove('panueloshadow')
+    }
+
+    //Cada vez que se aprieta el botón, se muestra o esconde el texto
+    setTimeout(function() {        
+        abuelatest3.classList.toggle('hidden')}, 500)
+
+});
 
 
 ///////////////////////////////////////////
 // BOTONES PARA CAMBIAR DE SECCIÓN DE MADRES Y ABUELAS
 
 botonabuelassect.addEventListener('click', function () {
-    madreseccion.classList.toggle('hidden')
-    seccionabuelas.classList.toggle('hidden')
+    let seccionmadrescheck = seccionmadres.classList.contains('extraheight')
+    let abuelatest1check = abuelatest1.classList.contains('hidden')
+    let abuelatest2check = abuelatest2.classList.contains('hidden')
+    let abuelatest3check = abuelatest3.classList.contains('hidden')
+    let madretest1check = madretest1.classList.contains('hidden')
+    let madretest2check = madretest2.classList.contains('hidden')
+    let madretest3check = madretest3.classList.contains('hidden')
+
+    console.log(abuelatest1check)
+
+
+    madreseccion.classList.add('hidden')
+    seccionabuelas.classList.remove('hidden')
     botonabuelassect.classList.toggle('inactivo')
     botonmadressect.classList.toggle('inactivo')
+
+    if (seccionmadrescheck == true) {
+        seccionmadres.classList.remove('extraheight')
+    }
+
+    if (abuelatest1check == true || abuelatest2check == true || abuelatest3check == true || madretest1check == true || madretest2check == true || madretest3check == true) {
+        seccionmadres.classList.remove('extraheight')
+        abuelatest1.classList.add('hidden')
+        abuelatest2.classList.add('hidden')
+        abuelatest3.classList.add('hidden')
+        madretest3.classList.add('hidden')
+        madretest1.classList.add('hidden')
+        madretest2.classList.add('hidden')
+    }
+
 })
 
 botonmadressect.addEventListener('click', function () {
-    seccionabuelas.classList.toggle('hidden')
-    madreseccion.classList.toggle('hidden')
+    let seccionmadrescheck = seccionmadres.classList.contains('extraheight')
+    let abuelatest1check = abuelatest1.classList.contains('hidden')
+    let abuelatest2check = abuelatest2.classList.contains('hidden')
+    let abuelatest3check = abuelatest3.classList.contains('hidden')
+    let madretest1check = madretest1.classList.contains('hidden')
+    let madretest2check = madretest2.classList.contains('hidden')
+    let madretest3check = madretest3.classList.contains('hidden')
+
+
+    seccionabuelas.classList.add('hidden')
+    madreseccion.classList.remove('hidden')
     botonabuelassect.classList.toggle('inactivo')
     botonmadressect.classList.toggle('inactivo')
+
+    
+    if (seccionmadrescheck == true) {
+        seccionmadres.classList.remove('extraheight')
+    }
+
+    if (abuelatest1check == true || abuelatest2check == true || abuelatest3check == true || madretest1check == true || madretest2check == true || madretest3check == true) {
+        seccionmadres.classList.remove('extraheight')
+        abuelatest1.classList.add('hidden')
+        abuelatest2.classList.add('hidden')
+        abuelatest3.classList.add('hidden')
+        madretest3.classList.add('hidden')
+        madretest1.classList.add('hidden')
+        madretest2.classList.add('hidden')
+    }
+    
 })
 //ANIMACIONES
 $(() => {
