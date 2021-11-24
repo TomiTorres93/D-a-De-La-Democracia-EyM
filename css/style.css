@@ -196,6 +196,20 @@ nav {
   overflow-y: hidden;
 }
 
+.seccion-glosario {
+  text-align: center;
+  height: 1000px;
+  padding: 100px 5%;
+  background-image: url("../images/nuncamas.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 .seccion-blanca {
   text-align: center;
   justify-content: center;
@@ -207,7 +221,7 @@ nav {
 
 .seccion-negra {
   text-align: center;
-  height: 1000px;
+  height: fit-content;
   padding: 200px 5%;
   color: #a390bd;
   background-color: #323232;
@@ -1058,6 +1072,46 @@ nav {
   text-shadow: 5px 5px 5px black;
 }
 
+.glosario-cont {
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 5% 10%;
+}
+
+.glosario-card {
+  text-align: center;
+  margin: 0.2rem 0.5rem;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.glosario-card:hover {
+  background-color: #a390bd;
+}
+
+.size1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+.size2 {
+  border-top: solid 2px 10px #a390bd;
+}
+
+.extraalt {
+  height: 4.5rem;
+}
+
+.tt {
+  height: fit-content;
+}
+
+.conceptos {
+  background-color: #a390bd;
+  padding: 1rem 3rem;
+}
+
 /* MIXINS */
 /*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
 /*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
@@ -1071,14 +1125,14 @@ nav {
   flex-wrap: wrap;
 }
 
-.seccion-blanca, .seccion-foto-1, .seccion-foto-madres, .seccion-foto-urna, .candidatos-container, .botones-container, .masboton, .quiz-respuestas-cont, .rondacont, .fila, .panuelocont, .madres-test-cont, .pie-conteiner, .boton-atras-cont {
+.seccion-blanca, .seccion-foto-1, .seccion-foto-madres, .seccion-foto-urna, .candidatos-container, .botones-container, .masboton, .quiz-respuestas-cont, .rondacont, .fila, .panuelocont, .madres-test-cont, .pie-conteiner, .boton-atras-cont, .glosario-cont {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
 }
 
-header, .seccion-color, .seccion-nietos, .seccion-negra, .seccion-negra-ministerio, .quiz, .columna {
+header, .seccion-color, .seccion-nietos, .seccion-glosario, .seccion-negra, .seccion-negra-ministerio, .quiz, .columna, .glosario-card {
   display: flex;
   align-items: center;
   flex-direction: column;

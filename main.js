@@ -914,3 +914,38 @@ console.log(volveralinicio1)
 
 
 
+const glosario1 = document.querySelector('#glosario1')
+const glosario2 = document.querySelector('#glosario2')
+const glosario3 = document.querySelector('#glosario3')
+const glosario4 = document.querySelector('#glosario4')
+const glosario5 = document.querySelector('#glosario5')
+const glosario6 = document.querySelector('#glosario6')
+const glosario7 = document.querySelector('#glosario7')
+const glosario8 = document.querySelector('#glosario8')
+
+const glosariotext1 = document.querySelector('#glosariotext1')
+const glosariotext2 = document.querySelector('#glosariotext2')
+const glosariotext3 = document.querySelector('#glosariotext3')
+const glosariotext4 = document.querySelector('#glosariotext4')
+const glosariotext5 = document.querySelector('#glosariotext5')
+const glosariotext6 = document.querySelector('#glosariotext6')
+const glosariotext7 = document.querySelector('#glosariotext7')
+const glosariotext8 = document.querySelector('#glosariotext8')
+
+
+function glosario(palabra, texto) {
+
+    palabra.addEventListener('click', function () {
+    texto.classList.toggle('hidden')
+
+})
+}
+
+let glo1 = glosario(glosario1, glosariotext1)
+let glo2 = glosario(glosario2, glosariotext2)
+let glo3 = glosario(glosario3, glosariotext3)
+let glo4 = glosario(glosario4, glosariotext4)
+let glo5 = glosario(glosario5, glosariotext5)
+let glo6 = glosario(glosario6, glosariotext6)
+let glo7 = glosario(glosario7, glosariotext7)
+let glo8 = glosario(glosario8, glosariotext8)
