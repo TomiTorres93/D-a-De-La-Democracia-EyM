@@ -182,6 +182,16 @@ nav {
   overflow-y: hidden;
 }
 
+.seccion-color-galeria {
+  text-align: center;
+  height: fit-content;
+  padding: 100px 5%;
+  background-color: #74668a;
+  color: white;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 .seccion-color-fit {
   text-align: center;
   height: fit-content;
@@ -224,6 +234,15 @@ nav {
   text-align: center;
   justify-content: center;
   height: 1000px;
+  padding: 100px 5%;
+  background-color: white;
+  color: #a390bd;
+}
+
+.seccion-blanca-luchadoras {
+  text-align: center;
+  justify-content: center;
+  height: fit-content;
   padding: 100px 5%;
   background-color: white;
   color: #a390bd;
@@ -803,7 +822,7 @@ nav {
 
 .arrow-down3 {
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 3rem;
   animation: upanddown2 5s infinite;
   animation-name: upanddown2;
 }
@@ -1224,6 +1243,7 @@ nav {
 
 .tt {
   height: fit-content;
+  padding: 100px 5%;
 }
 
 .conceptos {
@@ -1280,14 +1300,14 @@ nav {
   flex-wrap: wrap;
 }
 
-.seccion-blanca, .seccion-foto-1, .seccion-foto-madres, .seccion-foto-urna, .candidatos-container, .botones-container, .masboton, .quiz-respuestas-cont, .rondacont, .fila, .panuelocont, .madres-test-cont, .pie-conteiner, .boton-atras-cont, .glosario-cont {
+.seccion-blanca, .seccion-blanca-luchadoras, .seccion-foto-1, .seccion-foto-madres, .seccion-foto-urna, .candidatos-container, .botones-container, .masboton, .quiz-respuestas-cont, .rondacont, .fila, .panuelocont, .madres-test-cont, .pie-conteiner, .boton-atras-cont, .glosario-cont {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
 }
 
-header, .seccion-color, .seccion-color-fit, .seccion-nietos, .seccion-glosario, .seccion-negra, .seccion-negra-ministerio, .quiz-pres, .columna, .glosario-card {
+header, .seccion-color, .seccion-color-galeria, .seccion-color-fit, .seccion-nietos, .seccion-glosario, .seccion-negra, .seccion-negra-ministerio, .quiz-pres, .columna, .glosario-card {
   display: flex;
   align-items: center;
   flex-direction: column;

@@ -41,6 +41,17 @@ nav {
     overflow-y: hidden;
 }
 
+.seccion-color-galeria {
+    @extend %flexbox-column;
+    text-align: center;
+    height: fit-content;
+    padding: 100px 5%;
+    background-color: nth($color, 3);
+    color: white;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
 .seccion-color-fit {
     @extend %flexbox-column;
     text-align: center;
@@ -88,6 +99,16 @@ nav {
     text-align: center;
     justify-content: center;
     height: 1000px;
+    padding: 100px 5%;
+    background-color: white;
+    color: nth($color, 1);
+}
+
+.seccion-blanca-luchadoras {
+    @extend %flexbox-row;
+    text-align: center;
+    justify-content: center;
+    height: fit-content;
     padding: 100px 5%;
     background-color: white;
     color: nth($color, 1);
@@ -751,7 +772,7 @@ animation-name: borderglow;
 
 .arrow-down3 {
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
     animation: upanddown2 5s infinite;
     animation-name: upanddown2;
 
@@ -1262,6 +1283,8 @@ font-size: 1rem;
 
 .tt {
     height: fit-content;
+    padding: 100px 5%;
+
 }
 
 .conceptos {
