@@ -292,6 +292,13 @@ nav {
   color: black;
 }
 
+.parrafo-quiz {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  margin: 2rem;
+  color: black;
+}
+
 .subtit {
   font-family: "Roboto Slab", serif;
   font-size: 2rem;
@@ -479,11 +486,16 @@ nav {
   color: #74668a;
 }
 
-.quiz {
+.quiz-pres {
   text-align: center;
-  background-color: black;
-  height: 1000px;
-  padding: 200px 5%;
+  background-color: white;
+  height: fit-content;
+  padding: 100px 5%;
+}
+
+.ancho {
+  width: 100%;
+  padding: 0;
 }
 
 .quiz-titulo {
@@ -509,12 +521,56 @@ nav {
   font-weight: 700;
 }
 
-.resp-correcta {
-  background-color: chartreuse;
+.quiz-op {
+  margin-top: 3rem;
 }
 
-.resp-incorrecta {
-  background-color: red;
+.comprobado {
+  width: 10rem;
+}
+
+.quizsub {
+  color: white;
+  background-color: #a390bd;
+  border-radius: 10px;
+  padding: 0.2rem 2rem;
+  margin-top: 4rem;
+}
+
+.checkbox {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: black 2px solid;
+  border-radius: 100px;
+  transition: 0.5s ease;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+}
+
+.respcorrecta {
+  background-color: #c7e5c4;
+  color: #5daf4d;
+  border: #5daf4d 2px solid;
+  transition: 0.5s ease;
+}
+
+.respincorrecta {
+  background-color: #da7b7b;
+  color: #e23737;
+  border: #ce1616 2px solid;
+  transition: 0.5s ease;
+}
+
+.tick {
+  font-size: 1.2rem;
+  transition: 0.5s ease;
+}
+
+.tickbox {
+  padding: 0.2rem;
 }
 
 .calendario {
@@ -1132,7 +1188,7 @@ nav {
   flex-wrap: wrap;
 }
 
-header, .seccion-color, .seccion-nietos, .seccion-glosario, .seccion-negra, .seccion-negra-ministerio, .quiz, .columna, .glosario-card {
+header, .seccion-color, .seccion-nietos, .seccion-glosario, .seccion-negra, .seccion-negra-ministerio, .quiz-pres, .columna, .glosario-card {
   display: flex;
   align-items: center;
   flex-direction: column;

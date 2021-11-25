@@ -9,31 +9,6 @@ function volveralinicio(a, b, c) {
 
 
 
-//PREGUNTA 1
-
-const respuestaIncorrecta1 = document.querySelector('.incorrecta1')
-const respuestaIncorrecta2 = document.querySelector('.incorrecta2')
-const respuestaIncorrecta3 = document.querySelector('.incorrecta3')
-const respuestaCorrecta1 = document.querySelector('.correcta1')
-
-
-
-respcolor.addEventListener('click', function () {
-    respuestaIncorrecta1.classList.toggle('resp-incorrecta')
-});
-
-respcolor2.addEventListener('click', function () {
-    respuestaIncorrecta2.classList.toggle('resp-incorrecta')
-});
-
-respcolor3.addEventListener('click', function () {
-    respuestaCorrecta1.classList.toggle('resp-correcta')
-});
-
-respcolor4.addEventListener('click', function () {
-    respuestaIncorrecta3.classList.toggle('resp-incorrecta')
-});
-
 
 // FUNCION ELECCIONES - Al hacer click en los botones se pasa a la siguiente información
 
@@ -902,17 +877,9 @@ back8.addEventListener('mouseover', function () {
 });
 
 
-// TESTIMONIOS DE MADRES
-
-
-
-
-
-
+// GLOSARIO
 
 console.log(volveralinicio1)
-
-
 
 const glosario1 = document.querySelector('#glosario1')
 const glosario2 = document.querySelector('#glosario2')
@@ -949,3 +916,176 @@ let glo5 = glosario(glosario5, glosariotext5)
 let glo6 = glosario(glosario6, glosariotext6)
 let glo7 = glosario(glosario7, glosariotext7)
 let glo8 = glosario(glosario8, glosariotext8)
+
+//CHECKBOX
+
+const check1 = document.querySelector('#check1')
+const check1a = document.querySelector('#check1a')
+const tick1 = document.querySelector('#tick1')
+
+
+check1.addEventListener('click', function () {
+
+    check1.classList.toggle('respcorrecta')
+
+    setTimeout(function() {
+        $("#tick1").fadeIn(300)
+        tick1.classList.toggle('hidden') }, 50)
+})
+
+
+const check2 = document.querySelector('#check2')
+const check2a = document.querySelector('#check2a')
+const tick2 = document.querySelector('#tick2')
+
+
+check2.addEventListener('click', function () {
+
+    check2.classList.toggle('respcorrecta')
+
+    setTimeout(function() {
+        $("#tick2").fadeIn(300)
+        tick2.classList.toggle('hidden') }, 50)
+})
+
+
+const check3 = document.querySelector('#check3')
+const check3a = document.querySelector('#check3a')
+const tick3 = document.querySelector('#tick3')
+
+
+check3.addEventListener('click', function () {
+
+    check3.classList.toggle('respincorrecta')
+
+    setTimeout(function() {
+        $("#tick3").fadeIn(300)
+        tick3.classList.toggle('hidden') }, 50)
+})
+
+
+const check4 = document.querySelector('#check4')
+const check4a = document.querySelector('#check4a')
+const tick4 = document.querySelector('#tick4')
+
+
+check4.addEventListener('click', function () {
+
+    check4.classList.toggle('respcorrecta')
+
+    setTimeout(function() {
+        $("#tick4").fadeIn(300)
+        tick4.classList.toggle('hidden') }, 50)
+})
+
+const check5 = document.querySelector('#check5')
+const check5a = document.querySelector('#check5a')
+const tick5 = document.querySelector('#tick5')
+
+
+check5.addEventListener('click', function () {
+
+    check5.classList.toggle('respincorrecta')
+
+    setTimeout(function() {
+        $("#tick5").fadeIn(300)
+        tick5.classList.toggle('hidden') }, 50)
+})
+
+const check6 = document.querySelector('#check6')
+const check6a = document.querySelector('#check6a')
+const tick6 = document.querySelector('#tick6')
+
+
+check6.addEventListener('click', function () {
+
+    check6.classList.toggle('respcorrecta')
+
+    setTimeout(function() {
+        $("#tick6").fadeIn(300)
+        tick6.classList.toggle('hidden') }, 50)
+})
+
+const check7 = document.querySelector('#check7')
+const check7a = document.querySelector('#check7a')
+const tick7 = document.querySelector('#tick7')
+
+
+check7.addEventListener('click', function () {
+
+    check7.classList.toggle('respincorrecta')
+
+    setTimeout(function() {
+        $("#tick7").fadeIn(300)
+        tick7.classList.toggle('hidden') }, 50)
+})
+
+const check8 = document.querySelector('#check8')
+const check8a = document.querySelector('#check8a')
+const tick8 = document.querySelector('#tick8')
+
+
+check8.addEventListener('click', function () {
+
+    check8.classList.toggle('respcorrecta')
+
+    setTimeout(function() {
+        $("#tick8").fadeIn(300)
+        tick8.classList.toggle('hidden') }, 50)
+})
+
+const check9 = document.querySelector('#check9')
+const check9a = document.querySelector('#check9a')
+const tick9 = document.querySelector('#tick9')
+
+
+check9.addEventListener('click', function () {
+
+    check9.classList.toggle('respcorrecta')
+
+    setTimeout(function() {
+        $("#tick9").fadeIn(300)
+        tick9.classList.toggle('hidden') }, 50)
+})
+
+const check10 = document.querySelector('#check10')
+const check10a = document.querySelector('#check10a')
+const tick10 = document.querySelector('#tick10')
+
+
+check10.addEventListener('click', function () {
+
+    check10.classList.toggle('respcorrecta')
+
+    setTimeout(function() {
+        $("#tick10").fadeIn(300)
+        tick10.classList.toggle('hidden') }, 50)
+})
+
+const check11 = document.querySelector('#check11')
+const check11a = document.querySelector('#check11a')
+const tick11 = document.querySelector('#tick11')
+
+
+check11.addEventListener('click', function () {
+
+    check11.classList.toggle('respcorrecta')
+
+    setTimeout(function() {
+        $("#tick11").fadeIn(300)
+        tick11.classList.toggle('hidden') }, 50)
+})
+
+const check12 = document.querySelector('#check12')
+const check12a = document.querySelector('#check12a')
+const tick12 = document.querySelector('#tick12')
+
+
+check12.addEventListener('click', function () {
+
+    check12.classList.toggle('respcorrecta')
+
+    setTimeout(function() {
+        $("#tick12").fadeIn(300)
+        tick12.classList.toggle('hidden') }, 50)
+})
