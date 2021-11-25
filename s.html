@@ -1,1 +1,241 @@
-let glo8 = glosario(glosario8, glosariotext8)
+const check12 = document.querySelector('#check12')
+const check12a = document.querySelector('#check12a')
+const tick12 = document.querySelector('#tick12')
+
+
+check12.addEventListener('click', function () {
+
+    check12.classList.toggle('respcorrecta')
+
+    setTimeout(function() {
+        $("#tick12").fadeIn(300)
+        tick12.classList.toggle('hidden') }, 50)
+})
+
+
+
+
+PARTE 2
+<div class="columna hidden seccionelec2" id="seccionelec2">  
+  <p class="subtit blanco id2">Cantidad de votantes</p>
+  <div class="titulo blanco id3" id="numero"> 
+    <span class="hidden" id="vot1">1</span>
+    <span class="hidden" id="vot2">5</span>
+    <span class="hidden" id="vot3">.</span>
+    <span class="hidden" id="vot4">3</span>
+    <span class="hidden" id="vot5">5</span>
+    <span class="hidden" id="vot6">0</span>
+    <span class="hidden" id="vot7">.</span>
+    <span class="hidden" id="vot8">1</span>
+    <span class="hidden" id="vot9">8</span>
+    <span class="hidden" id="vot10">6</span>
+    <span class="hidden" id="vot11">|</span>
+  </div>
+
+  <!-- Botón para seguir a los datos de las elecciones -->
+<div class="boton-atras-cont hidden" id="backcont1">
+  <!-- VOLVER AL INICIO -->
+
+<img class="boton-inicio" src="images\back2.png" alt="back2" id="back2">
+<p class="backmes2 hidden" id="back2mes">Volver al inicio</p>
+
+</div>
+
+<!-- Botón para seguir a los datos de las elecciones -->
+
+  <div class="masboton hidden" id="masboton2">
+    <img class="arrow" src="images\arrow-lighning.png" alt="urna-voto">
+  </div>
+</div>
+
+
+
+<!-- PARTE 3 -->
+<div class="columna hidden seccionelec3" id="seccionelec2">  
+  <p class="titulo blanco">Raúl Alfonsín</p>
+  <p class="subtit id4 glow-bl-v">Unión Cívica Radical (UCR)</p>
+  <div class="titulo blanco id3" id="2numero"> 
+    <span class="hidden" id="bvot1">5</span>
+    <span class="hidden" id="bvot2">1</span>
+    <span class="hidden" id="bvot3">,</span>
+    <span class="hidden" id="bvot4">7</span>
+    <span class="hidden" id="bvot5">5</span>
+    <span class="hidden" id="bvot6">%</span>
+    <span class="hidden" id="bvot7">|</span>
+
+  </div>
+  <p class="hidden detalle-text blanco id4" id="bvot8">7.724.559 votos</p>
+
+  <!-- Botón para seguir a los datos de las elecciones -->
+  <div class="boton-atras-cont cont2 hidden" id="backcont2">
+    <!-- VOLVER AL INICIO -->
+  <img class="boton-inicio" src="images\back2.png" alt="back3" id="back3"> 
+  <p class="backmes2 hidden" id="back3mes">Volver al inicio</p>
+  
+  <img class="boton-atras" src="images\back1.png" alt="back4" id="back4">
+  <p class="backmes hidden" id="back4mes">Volver atrás</p>
+  </div>
+<!-- Botón para seguir a los datos de las elecciones -->
+
+  <div class="masboton hidden up" id="masboton3">
+    <img class="arrow" src="images\arrow-lighning.png" alt="urna-voto">
+  </div>
+</div>
+
+
+<!--
+<!-- PARTE 4 -->
+<div class="columna hidden seccionelec4" id="seccionelec3">  
+  <p class="titulo blanco">Ítalo Luder</p>
+  <p class="subtit id4 glow-bl-v">Partido Justicialista (PJ)</p>
+  <div class="titulo blanco id3" id="2numero"> 
+    <span class="hidden" id="cvot1">4</span>
+    <span class="hidden" id="cvot2">0</span>
+    <span class="hidden" id="cvot3">,</span>
+    <span class="hidden" id="cvot4">1</span>
+    <span class="hidden" id="cvot5">6</span>
+    <span class="hidden" id="cvot6">%</span>
+    <span class="hidden" id="cvot7">|</span>
+  </div>
+  <p class="hidden detalle-text blanco id4" id="cvot8">5.995.402 votos</p>
+
+    <!-- Botón para seguir a los datos de las elecciones -->
+    <div class="boton-atras-cont cont3 hidden" id="backcont3">
+      <!-- VOLVER AL INICIO -->
+    <img class="boton-inicio" src="images\back2.png" alt="back5" id="back5"> 
+    <p class="backmes2 hidden" id="back5mes">Volver al inicio</p>
+    
+    <img class="boton-atras" src="images\back1.png" alt="back6" id="back6">
+    <p class="backmes hidden" id="back6mes">Volver atrás</p>
+    </div>
+
+<!-- Botón para seguir a los datos de las elecciones -->
+
+<div class="masboton hidden up" id="masboton4">
+  <img class="arrow" src="images\arrow-lighning.png" alt="urna-voto">
+</div>
+</div>
+
+-->
+
+
+<!-- JS -->
+
+
+const seccionelec3 = document.querySelector('.seccionelec3')
+const seccionelec4 = document.querySelector('.seccionelec4')
+const seccionelec5 = document.querySelector('.seccionelec5')
+const seccionelec6 = document.querySelector('.seccionelec6')
+const vot1 = document.querySelector('#vot1')
+const vot2 = document.querySelector('#vot2')
+const vot3 = document.querySelector('#vot3')
+const vot4 = document.querySelector('#vot4')
+const vot5 = document.querySelector('#vot5')
+const vot6 = document.querySelector('#vot6')
+const vot7 = document.querySelector('#vot7')
+const vot8 = document.querySelector('#vot8')
+const vot9 = document.querySelector('#vot9')
+const vot10 = document.querySelector('#vot10')
+const vot11 = document.querySelector('#vot11')
+const bvot1 = document.querySelector('#bvot1')
+const bvot2 = document.querySelector('#bvot2')
+const bvot3 = document.querySelector('#bvot3')
+const bvot4 = document.querySelector('#bvot4')
+const bvot5 = document.querySelector('#bvot5')
+const bvot6 = document.querySelector('#bvot6')
+const bvot7 = document.querySelector('#bvot7')
+const bvot8 = document.querySelector('#bvot8')
+const cvot1 = document.querySelector('#cvot1')
+const cvot2 = document.querySelector('#cvot2')
+const cvot3 = document.querySelector('#cvot3')
+const cvot4 = document.querySelector('#cvot4')
+const cvot5 = document.querySelector('#cvot5')
+const cvot6 = document.querySelector('#cvot6')
+const cvot7 = document.querySelector('#cvot7')
+const cvot8 = document.querySelector('#cvot8')
+
+masboton2.addEventListener('click', function () {
+  
+    seccionelec2.classList.add('hidden')
+    seccionelec3.classList.remove('hidden')
+    setTimeout(function() {bvot7.classList.remove('hidden')}, 600)
+    setTimeout(function() {bvot1.classList.remove('hidden')}, 1000)
+    setTimeout(function() {bvot2.classList.remove('hidden')}, 1200)
+    setTimeout(function() {bvot3.classList.remove('hidden')}, 1400)
+    setTimeout(function() {bvot4.classList.remove('hidden')}, 1600)
+    setTimeout(function() {bvot5.classList.remove('hidden')}, 1800)
+    setTimeout(function() {bvot6.classList.remove('hidden')}, 2000)
+    setTimeout(function() {bvot7.classList.remove('hidden')}, 2200)
+    setTimeout(function() {$("#bvot8").fadeIn(300) 
+    bvot8.classList.remove('hidden')}, 2600)
+    setTimeout(function() {
+        $("#masboton3").fadeIn(300)
+        masboton3.classList.remove('hidden')}, 2800)
+
+        setTimeout(function() {
+        $("#backcont2").fadeIn(300)
+        backcont2.classList.remove('hidden')
+        }, 2900)
+});
+
+masboton3.addEventListener('click', function () {
+    seccionelec3.classList.remove('hidden')
+    seccionelec2.classList.add('hidden')
+});
+
+
+
+masboton3.addEventListener('click', function () {
+  
+    seccionelec3.classList.add('hidden')
+    seccionelec4.classList.remove('hidden')
+    setTimeout(function() {cvot7.classList.remove('hidden')}, 600)
+    setTimeout(function() {cvot1.classList.remove('hidden')}, 1000)
+    setTimeout(function() {cvot2.classList.remove('hidden')}, 1200)
+    setTimeout(function() {cvot3.classList.remove('hidden')}, 1400)
+    setTimeout(function() {cvot4.classList.remove('hidden')}, 1600)
+    setTimeout(function() {cvot5.classList.remove('hidden')}, 1800)
+    setTimeout(function() {cvot6.classList.remove('hidden')}, 2000)
+    setTimeout(function() {cvot7.classList.remove('hidden')}, 2200)
+    setTimeout(function() {$("#cvot8").fadeIn(300) 
+    cvot8.classList.remove('hidden')}, 2600)
+    setTimeout(function() {
+        $("#masboton4").fadeIn(300)
+        masboton4.classList.remove('hidden')}, 2800)
+
+        setTimeout(function() {
+            $("#backcont3").fadeIn(300)
+            backcont3.classList.remove('hidden')
+            }, 2900)
+});
+
+masboton4.addEventListener('click', function () {
+    seccionelec4.classList.remove('hidden')
+    seccionelec3.classList.add('hidden')
+});
+
+
+masboton4.addEventListener('click', function () {
+  
+    seccionelec4.classList.add('hidden')
+    seccionelec5.classList.remove('hidden')
+
+    setTimeout(function() {
+        $("#masboton4").fadeIn(300)
+        masboton5.classList.remove('hidden')}, 1000)
+
+        setTimeout(function() {
+            $("#backcont4").fadeIn(300)
+            backcont4.classList.remove('hidden')
+            }, 1200)
+});
+
+masboton5.addEventListener('click', function () {
+    seccionelec5.classList.remove('hidden')
+    seccionelec4.classList.add('hidden')
+
+    setTimeout(function() {
+        $("#backcont4").fadeIn(300)
+        backcont4.classList.remove('hidden')
+        }, 1200)
+});

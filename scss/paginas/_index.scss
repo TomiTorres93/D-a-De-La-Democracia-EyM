@@ -41,6 +41,18 @@ nav {
     overflow-y: hidden;
 }
 
+.seccion-color-fit {
+    @extend %flexbox-column;
+    text-align: center;
+    height: fit-content;
+    padding: 200px 5%;
+    background-color: nth($color, 3);
+    color: white;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
 .seccion-nietos {
     @extend %flexbox-column;
     text-align: center;
@@ -157,6 +169,13 @@ nav {
     font-weight: 800;
 }
 
+.titulo2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    filter: drop-shadow(5px 5px nth($color, 3));
+
+}
 
 .parrafo {
     font-family: 'Roboto Slab', serif;
@@ -195,6 +214,7 @@ nav {
     color: white;
     background-color: nth($color, 3);
     transition: 1s all;
+    border-radius: 10px;
 
 }
 
@@ -609,6 +629,65 @@ animation-name: borderglow;
 
 .shadow {
  filter: drop-shadow(15px 15px #8a7aa3);
+}
+
+.arrow-down {
+    margin-top: 6rem;
+    font-size: 4rem;
+
+    animation: upanddown 5s infinite;
+    animation-name: upanddown;
+
+    @keyframes upanddown {
+
+        0% {
+            transform: translateY(15px);
+        }
+
+        10% {
+            transform: translateY(-15px);
+       }
+
+        20% {
+            transform: translateY(15px);
+               }
+
+        30% {
+            transform: translateY(-15px);
+       }
+
+        40% {
+            transform: translateY(15px);
+        }
+
+        50% {
+            transform: translateY(-15px);
+       }
+        
+        60% {
+            transform: translateY(15px);
+        }
+
+        70% {
+            transform: translateY(-15px);
+       }
+
+        80% {
+            transform: translateY(15px);
+        }
+
+        90% {
+            transform: translateY(-15px);
+       }
+        
+        100% {
+            transform: translateY(15px);
+        }
+}
+
+&:hover {
+    color: whitesmoke;
+}
 }
 
 .arrow-down2 {
@@ -1188,4 +1267,45 @@ font-size: 1rem;
 .conceptos {
     background-color: #a390bd;
     padding: 1rem 3rem;
+    border-radius: 10px;
 }
+
+
+
+// FOOTER
+
+.footer-2 {
+    height: 250px;
+    width: 100%;    
+    background-color: white;  
+    transition: 1.5s all;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.logo-footer {
+    width: 15rem;
+}
+.detalle-text2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    color: black;
+}
+
+.link-rosa {
+    text-decoration: none;
+    color: #74668a;
+    font-weight: bolder;
+    transition: 0.3s all;
+    cursor: pointer;
+        &:hover {
+            color: white;
+            background: #74668a;
+        }
+}
+
