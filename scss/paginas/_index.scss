@@ -221,15 +221,16 @@ nav {
 
 .detalle-text {
     font-family: 'Raleway', sans-serif;
-    font-size: 0.7rem;
+    font-size: 1rem;
     margin: 10px;
     color: white;
+    font-weight: 600;
 }
 
 .recuadro {
     width: 70%;
     font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 10px;
     padding: 5%;
     color: white;
@@ -409,6 +410,11 @@ nav {
 .color3 {
     color: nth($color, 3);
 }
+
+.color4 {
+    color: #d9d3e2;
+}
+
 
 
 // QUIZ
@@ -1229,8 +1235,8 @@ font-size: 1rem;
 }
 
 .cont4 {
-    top: 10%;
-    right: 70%;
+    top: 20%;
+    right: 60%;
 }
 
 .masboton5 {
@@ -1318,6 +1324,7 @@ font-size: 1rem;
     font-size: 0.7rem;
     margin-top: 1rem;
     color: black;
+    font-weight: 600;
 }
 
 .link-rosa {
