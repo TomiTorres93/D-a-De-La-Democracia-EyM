@@ -175,7 +175,27 @@ nav {
 .seccion-color {
   text-align: center;
   height: 1000px;
-  padding: 0% 5%;
+  padding: 200px 5%;
+  background-color: #74668a;
+  color: white;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.seccion-color-elec {
+  text-align: center;
+  height: 1000px;
+  padding: 200px 5%;
+  background-color: #74668a;
+  color: white;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.seccion-color-1 {
+  text-align: center;
+  height: 1000px;
+  padding: 200px 5%;
   background-color: #74668a;
   color: white;
   overflow-x: auto;
@@ -185,7 +205,7 @@ nav {
 .seccion-color-galeria {
   text-align: center;
   height: fit-content;
-  padding: 0% 5%;
+  padding: 100px 5%;
   background-color: #74668a;
   color: white;
   overflow-x: auto;
@@ -195,7 +215,7 @@ nav {
 .seccion-color-fit {
   text-align: center;
   height: fit-content;
-  padding: 0% 5%;
+  padding: 200px 5%;
   background-color: #74668a;
   color: white;
   overflow-x: auto;
@@ -219,7 +239,7 @@ nav {
 .seccion-glosario {
   text-align: center;
   height: 1000px;
-  padding: 0% 5%;
+  padding: 100px 5%;
   background-image: url("../images/nuncamas.png");
   width: 100%;
   background-repeat: no-repeat;
@@ -234,7 +254,25 @@ nav {
   text-align: center;
   justify-content: center;
   height: 1000px;
-  padding: 0% 5%;
+  padding: 100px 5%;
+  background-color: white;
+  color: #a390bd;
+}
+
+.seccion-blanca-organismos {
+  text-align: center;
+  justify-content: center;
+  height: 1000px;
+  padding: 100px 5%;
+  background-color: white;
+  color: #a390bd;
+}
+
+.seccion-blanca-madres {
+  text-align: center;
+  justify-content: center;
+  height: 1000px;
+  padding: 100px 5%;
   background-color: white;
   color: #a390bd;
 }
@@ -243,7 +281,7 @@ nav {
   text-align: center;
   justify-content: center;
   height: fit-content;
-  padding: 0% 5%;
+  padding: 100px 5%;
   background-color: white;
   color: #a390bd;
 }
@@ -251,7 +289,7 @@ nav {
 .seccion-negra {
   text-align: center;
   height: fit-content;
-  padding: 0% 5%;
+  padding: 200px 5%;
   color: #a390bd;
   background-color: #323232;
 }
@@ -259,7 +297,7 @@ nav {
 .seccion-negra-ministerio {
   text-align: center;
   height: 600px;
-  padding: 0% 5%;
+  padding: 200px 5%;
   color: #a390bd;
   background-color: #323232;
 }
@@ -1306,14 +1344,14 @@ nav {
   flex-wrap: wrap;
 }
 
-.seccion-blanca, .seccion-blanca-luchadoras, .seccion-foto-1, .seccion-foto-madres, .seccion-foto-urna, .candidatos-container, .botones-container, .masboton, .quiz-respuestas-cont, .rondacont, .fila, .panuelocont, .madres-test-cont, .pie-conteiner, .boton-atras-cont, .glosario-cont {
+.seccion-blanca, .seccion-blanca-organismos, .seccion-blanca-madres, .seccion-blanca-luchadoras, .seccion-foto-1, .seccion-foto-madres, .seccion-foto-urna, .candidatos-container, .botones-container, .masboton, .quiz-respuestas-cont, .rondacont, .fila, .panuelocont, .madres-test-cont, .pie-conteiner, .boton-atras-cont, .glosario-cont {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
 }
 
-header, .seccion-color, .seccion-color-galeria, .seccion-color-fit, .seccion-nietos, .seccion-glosario, .seccion-negra, .seccion-negra-ministerio, .quiz-pres, .columna, .glosario-card {
+header, .seccion-color, .seccion-color-elec, .seccion-color-1, .seccion-color-galeria, .seccion-color-fit, .seccion-nietos, .seccion-glosario, .seccion-negra, .seccion-negra-ministerio, .quiz-pres, .columna, .glosario-card {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1331,9 +1369,10 @@ header, .seccion-color, .seccion-color-galeria, .seccion-color-fit, .seccion-nie
     display: none !important;
   }
 }
-@media only screen and (min-width: 800px) and (max-width: 1200px) {
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
   .seccion-nietos {
     height: 1200px;
+    padding: 0px 5%;
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 600px) {
@@ -1353,8 +1392,196 @@ header, .seccion-color, .seccion-color-galeria, .seccion-color-fit, .seccion-nie
     padding: 0rem 1rem;
   }
 
-  .parrafos {
-    padding: 0 5%;
+  .parrafo {
+    padding: 0;
+  }
+
+  .titulo-portada {
+    font-size: 3rem;
+    margin-top: 7rem;
+    padding: 0 0.5rem;
+    font-weight: 900;
+  }
+
+  .titulo {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  header {
+    height: 750px;
+  }
+
+  .calendario {
+    width: 5rem;
+  }
+
+  .seccion-blanca {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 1000px;
+    padding: 0 3%;
+  }
+
+  .seccion-foto-1 {
+    text-align: center;
+    height: 550px;
+    background-position: left;
+    background-size: cover;
+  }
+
+  .recuadro {
+    width: 90%;
+    font-size: 1.1rem;
+    padding: 5%;
+    color: white;
+    background-color: #74668a;
+  }
+
+  .urna {
+    width: 4rem;
+  }
+
+  .pie {
+    width: 300px;
+    height: 300px;
+    background-image: conic-gradient(#db7b7b 51.75%, #8abbcf 51.75% 91.91%, #649173 91.91% 94.24%, #292929 94.24% 95.43%, #a390bd 95.43% 96.15%, #b6b6b6 96.15% 100%);
+    border-radius: 50%;
+    margin: 2rem;
+  }
+
+  .datos {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+
+  .seccion-blanca-madres {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    height: 900px;
+    padding: 0% 5%;
+  }
+
+  .panuelomadres {
+    margin: 1rem 1rem;
+    width: 5rem;
+    cursor: pointer;
+  }
+
+  .extraheight {
+    height: 1450px;
+  }
+
+  .revextraheight {
+    height: 900px;
+  }
+
+  .seccion-blanca-organismos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    height: 1150px;
+    padding: 50px 5%;
+    background-color: white;
+    color: #a390bd;
+  }
+
+  .imgorganismosddhh {
+    width: 10rem;
+    margin: 0.5rem;
+  }
+
+  .seccion-color-elec {
+    height: 1250px;
+    padding: 50px 5%;
+  }
+
+  .ucr {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .pj {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .pi {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .mid {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .af {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .otros {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .seccion-foto-urna {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 450px;
+    background-position: left;
+    background-size: cover;
+  }
+
+  .titulo2 {
+    font-size: 2rem;
+    filter: drop-shadow(3px 3px #74668a);
+  }
+
+  .recmob {
+    position: relative;
+    right: 3rem;
+  }
+
+  .bigger {
+    font-size: 1.1rem;
+  }
+
+  .carousel {
+    width: 90%;
+  }
+
+  .carousel-caption {
+    font-size: 1rem;
+    text-shadow: 5px 5px 5px black;
   }
 }
 

@@ -34,7 +34,29 @@ nav {
     @extend %flexbox-column;
     text-align: center;
     height: 1000px;
-    padding: 0% 5%;
+    padding: 200px 5%;
+    background-color: nth($color, 3);
+    color: white;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.seccion-color-elec {
+    @extend %flexbox-column;
+    text-align: center;
+    height: 1000px;
+    padding: 200px 5%;
+    background-color: nth($color, 3);
+    color: white;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.seccion-color-1 {
+    @extend %flexbox-column;
+    text-align: center;
+    height: 1000px;
+    padding: 200px 5%;
     background-color: nth($color, 3);
     color: white;
     overflow-x: auto;
@@ -45,7 +67,7 @@ nav {
     @extend %flexbox-column;
     text-align: center;
     height: fit-content;
-    padding: 0% 5%;
+    padding: 100px 5%;
     background-color: nth($color, 3);
     color: white;
     overflow-x: auto;
@@ -56,7 +78,7 @@ nav {
     @extend %flexbox-column;
     text-align: center;
     height: fit-content;
-    padding: 0% 5%;
+    padding: 200px 5%;
     background-color: nth($color, 3);
     color: white;
     overflow-x: auto;
@@ -83,7 +105,7 @@ nav {
     @extend %flexbox-column;
     text-align: center;
     height: 1000px;
-    padding: 0% 5%;
+    padding: 100px 5%;
     background-image: url('../images/nuncamas.png');
     width: 100%;
     background-repeat: no-repeat;
@@ -99,17 +121,38 @@ nav {
     text-align: center;
     justify-content: center;
     height: 1000px;
-    padding: 0% 5%;
+    padding: 100px 5%;
     background-color: white;
     color: nth($color, 1);
 }
+
+.seccion-blanca-organismos {
+    @extend %flexbox-row;
+    text-align: center;
+    justify-content: center;
+    height: 1000px;
+    padding: 100px 5%;
+    background-color: white;
+    color: nth($color, 1);
+}
+
+.seccion-blanca-madres {
+    @extend %flexbox-row;
+    text-align: center;
+    justify-content: center;
+    height: 1000px;
+    padding: 100px 5%;
+    background-color: white;
+    color: nth($color, 1);
+}
+
 
 .seccion-blanca-luchadoras {
     @extend %flexbox-row;
     text-align: center;
     justify-content: center;
     height: fit-content;
-    padding: 0% 5%;
+    padding: 100px 5%;
     background-color: white;
     color: nth($color, 1);
 }
@@ -118,7 +161,7 @@ nav {
     @extend %flexbox-column;
     text-align: center;
     height: fit-content;
-    padding: 0% 5%;
+    padding: 200px 5%;
     color: nth($color, 1);
     background-color: #323232;
 }
@@ -127,7 +170,7 @@ nav {
     @extend %flexbox-column;
     text-align: center;
     height: 600px;
-    padding: 0% 5%;
+    padding: 200px 5%;
     color: nth($color, 1);
     background-color: #323232;
 }
@@ -237,7 +280,6 @@ nav {
     background-color: nth($color, 3);
     transition: 1s all;
     border-radius: 10px;
-
 }
 
 .botones-container {
