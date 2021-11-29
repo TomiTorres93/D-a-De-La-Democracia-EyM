@@ -175,7 +175,7 @@ nav {
 .seccion-color {
   text-align: center;
   height: 1000px;
-  padding: 200px 5%;
+  padding: 0% 5%;
   background-color: #74668a;
   color: white;
   overflow-x: auto;
@@ -185,7 +185,7 @@ nav {
 .seccion-color-galeria {
   text-align: center;
   height: fit-content;
-  padding: 100px 5%;
+  padding: 0% 5%;
   background-color: #74668a;
   color: white;
   overflow-x: auto;
@@ -195,7 +195,7 @@ nav {
 .seccion-color-fit {
   text-align: center;
   height: fit-content;
-  padding: 200px 5%;
+  padding: 0% 5%;
   background-color: #74668a;
   color: white;
   overflow-x: auto;
@@ -205,7 +205,7 @@ nav {
 .seccion-nietos {
   text-align: center;
   height: 1000px;
-  padding: 100px 5%;
+  padding: 0% 5%;
   background-image: url("../images/nietes.jpg");
   width: 100%;
   background-repeat: no-repeat;
@@ -219,7 +219,7 @@ nav {
 .seccion-glosario {
   text-align: center;
   height: 1000px;
-  padding: 100px 5%;
+  padding: 0% 5%;
   background-image: url("../images/nuncamas.png");
   width: 100%;
   background-repeat: no-repeat;
@@ -234,7 +234,7 @@ nav {
   text-align: center;
   justify-content: center;
   height: 1000px;
-  padding: 100px 5%;
+  padding: 0% 5%;
   background-color: white;
   color: #a390bd;
 }
@@ -243,7 +243,7 @@ nav {
   text-align: center;
   justify-content: center;
   height: fit-content;
-  padding: 100px 5%;
+  padding: 0% 5%;
   background-color: white;
   color: #a390bd;
 }
@@ -251,7 +251,7 @@ nav {
 .seccion-negra {
   text-align: center;
   height: fit-content;
-  padding: 200px 5%;
+  padding: 0% 5%;
   color: #a390bd;
   background-color: #323232;
 }
@@ -259,7 +259,7 @@ nav {
 .seccion-negra-ministerio {
   text-align: center;
   height: 600px;
-  padding: 200px 5%;
+  padding: 0% 5%;
   color: #a390bd;
   background-color: #323232;
 }
@@ -1331,169 +1331,30 @@ header, .seccion-color, .seccion-color-galeria, .seccion-color-fit, .seccion-nie
     display: none !important;
   }
 }
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .seccion-nietos {
+    height: 1200px;
+  }
+}
 @media only screen and (min-width: 100px) and (max-width: 600px) {
   body .none-mobile {
     display: none !important;
   }
-  body .detalle-text {
+
+  .detalle-text {
     font-family: "Raleway", sans-serif;
     font-size: 0.7rem;
     margin: 10px;
     padding: 0rem 1rem;
   }
-  body .titulos {
+
+  .titulos {
     font-size: 2rem;
     padding: 0rem 1rem;
   }
-  body .parrafos {
+
+  .parrafos {
     padding: 0 5%;
-  }
-  body .parrafos-3 {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    padding: 0rem 1.4rem;
-  }
-  body .titulos-blanco {
-    font-size: 2.5rem;
-    margin-top: 1rem;
-    padding: 0rem 1rem;
-  }
-  body .section-blanco {
-    height: 1200px;
-  }
-  body .section-blanco2 {
-    height: 1400px;
-  }
-  body .section-blanco-quees {
-    height: 850px;
-    width: 100%;
-    transition: 1.5s all;
-    color: black;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-  body .columna-50 {
-    padding: 0 1rem;
-  }
-  body .columna-50-b {
-    padding: 0 1rem;
-  }
-  body .parrafos-2 {
-    font-size: 1.5rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  body .row2 {
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  body .titulos-rosa {
-    font-size: 2rem;
-  }
-  body .cards {
-    width: 80%;
-    height: 235px;
-    background: #f4005c;
-    border-radius: 10px;
-    color: white;
-    margin-bottom: 1rem;
-  }
-  body .parrafos-card {
-    font-size: 1rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  body .titulo-card {
-    font-size: 1.3rem;
-    padding-top: 1rem;
-    font-family: "Raleway", sans-serif;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  body .row3 {
-    margin-top: 1rem;
-  }
-  body .cards-contacto {
-    width: 80%;
-    height: 220px;
-    background: #f4005c;
-    border-radius: 10px;
-    color: white;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  body .parrafos-card-contacto {
-    font-size: 1rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  body .titulo-card-contacto {
-    font-size: 1.2rem;
-    padding: 1rem 1rem 0rem 1rem;
-    font-family: "Raleway", sans-serif;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  body .section-extra {
-    height: 2500px;
-  }
-  body .recursos {
-    font-size: 1.2rem;
-    padding: 0rem 1.5rem 0rem 1.5rem;
-  }
-  body .arrow {
-    color: white;
-    font-size: 3rem;
-    margin-top: 1rem;
-  }
-  body .arrow2 {
-    font-size: 3rem;
-  }
-  body .arrow-b {
-    font-size: 3rem;
-    margin-top: 1rem;
-  }
-  body .video {
-    width: 100%;
-    height: 30%;
-  }
-
-  .titulo-portada {
-    font-family: "Nunito", sans-serif;
-    color: white;
-    font-size: 3rem;
-    margin-top: 5rem;
-    padding: 0 2rem;
-    font-weight: 900;
-    transition: 0.5s all;
-  }
-
-  .section-video {
-    height: 400px;
-  }
-
-  .sectionb {
-    height: 1150px;
   }
 }
 
