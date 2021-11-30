@@ -126,6 +126,16 @@ nav {
     color: nth($color, 1);
 }
 
+.seccion-blanca-ll {
+    @extend %flexbox-row;
+    text-align: center;
+    justify-content: center;
+    height: 1000px;
+    padding: 100px 5%;
+    background-color: white;
+    color: nth($color, 1);
+}
+
 .seccion-blanca-organismos {
     @extend %flexbox-row;
     text-align: center;
@@ -210,10 +220,18 @@ nav {
     transition: 1s all;    
 }
 
+.seccionelec2 {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
 
 .candidatos-container {
     @extend %flexbox-row;
     text-align: center;
+}
+
+.datos {
+    margin-left: 2rem;
 }
 
 .ucrcontainer {
@@ -1214,7 +1232,7 @@ font-size: 1rem;
   .pie-conteiner {
     @extend %flexbox-row;
     text-align: center;
-    
+    width: 100%;
   }
 
   .fontplus {

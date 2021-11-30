@@ -77,6 +77,27 @@ body {
     padding: 0 3%;
 }
 
+.seccion-blanca-luchadoras {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 100px 5%;
+}
+
+.seccion-blanca-ll {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    height: fit-content;
+    padding: 50px 3%;
+}
+
 .seccion-foto-1 {
     text-align: center;
     height: 550px;
@@ -86,7 +107,7 @@ body {
 
 .recuadro {
     width: 90%;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     padding: 5%;
     color: white;
     background-color: nth($color, 3);
@@ -97,8 +118,8 @@ body {
 }
 
 .pie {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background-image: conic-gradient(
     #db7b7b 51.75%, 
     #8abbcf 51.75% 91.91%, 
@@ -107,7 +128,7 @@ body {
     #a390bd 95.43% 96.15%,
     #b6b6b6 96.15% 100% );
     border-radius: 50%;
-    margin: 2rem;
+    margin: 1rem;
   }
 
   .datos {
@@ -116,9 +137,17 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     text-align: center;
+    width: 90%;
+    margin-left: 0rem;
+
   }
 
-  
+  .kkkk {
+      font-size: 1rem;
+  }
+  .yyy {
+      text-align: center;
+  }
 .seccion-blanca-madres {
     display: flex;
     align-items: center;
@@ -126,16 +155,34 @@ body {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    height: 900px;
+    height: 1200px;
     padding: 0% 5%;
+}
+
+.extraheight {
+    height: 1750px;
 
 }
 
+.revextraheight {
+    height: 1200px;
+}
+
+.botonmadabue {
+    margin: 0.5rem 2rem;
+}
+
+
 .panuelomadres {
     margin: 1rem 1rem;
-    width: 5rem;
+    width: 4rem;
     cursor: pointer;
 
+}
+
+
+.madretestpar {
+   font-size: 1rem;
 }
 
 .extraheight {
@@ -155,7 +202,7 @@ body {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    height: 1150px;
+    height: fit-content;
     padding: 50px 5%;
     background-color: white;
     color: nth($color, 1);
@@ -168,12 +215,13 @@ body {
 }
 
 .seccion-color-elec {
-    height: 1250px;
+    height: fit-content;
     padding: 50px 5%;
 }
 
 .ucr {
     font-family: 'Raleway', sans-serif;
+    width: 80%;
     font-weight: 600;
     font-size: 1.2rem;
     padding: 0.2rem 0.5rem;
@@ -183,6 +231,8 @@ body {
     font-weight: 600;
   font-size: 1.2rem;
   padding: 0.2rem 0.5rem;
+  width: 80%;
+
   }
 
 .pi {
@@ -190,6 +240,8 @@ body {
     font-weight: 600;
   font-size: 1.2rem;
   padding: 0.2rem 0.5rem;
+  width: 80%;
+
 }
 
 .mid {
@@ -197,6 +249,8 @@ body {
     font-weight: 600;
   font-size: 1.2rem;
   padding: 0.2rem 0.5rem;
+  width: 80%;
+
 }
 
 .af {
@@ -204,6 +258,8 @@ body {
     font-weight: 600;
   font-size: 1.2rem;
   padding: 0.2rem 0.5rem;
+  width: 80%;
+
 }
 
 .otros {
@@ -211,6 +267,8 @@ body {
     font-weight: 600;
   font-size: 1.2rem;
   padding: 0.2rem 0.5rem;
+  width: 80%;
+
 }
 
 .seccion-foto-urna {
@@ -218,7 +276,7 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    height: 450px;
+    height: 470px;
     background-position: left;
     background-size: cover;
 }
@@ -259,27 +317,40 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    padding: 0px 0px;
 }
 
 .rondagif {
-    width: 30rem;
+    width: 15rem;
     filter: drop-shadow(1px 1px 250px #74668a);
 }
 
+
+
 .seccion-nietos {
     padding: 100px 5% 0 5%;
-    height: 1200px;
+    height: fit-content;
 }
 
 .tt {
     height: fit-content;
     padding: 100px 5%;
+}
 
+.rondarecuadro {
+    width: 80%;
+}
+
+.seccion-foto-madres {
+
+    height: fit-content;
+    padding: 100px 0;
+   
 }
 
 .glosario-cont {
     margin-top: 2rem;
-    padding: 5% 10%;
+    padding: 0;
 }
 
 .parrafo-quiz {
@@ -291,4 +362,24 @@ body {
     font-size: 0.8rem;
 }
 
+.size1 {
+    font-size: 1.1rem;
+}
+
+.glosario-card {
+    width: 42%;
+    text-align: center;
+    margin: 0.2rem 0.5rem;
+}
+
+.glosarioadd {
+    width: 90%;
+}
+
+.fila {        
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
 }
