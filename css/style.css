@@ -1583,6 +1583,10 @@ header, .seccion-color, .seccion-color-elec, .seccion-color-1, .seccion-color-ga
     font-size: 1rem;
     text-shadow: 5px 5px 5px black;
   }
+
+  .lower {
+    font-size: 1.7rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
