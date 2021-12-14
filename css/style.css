@@ -1796,7 +1796,8 @@ header, .seccion-color, .seccion-color-elec, .seccion-color-1, .seccion-color-ga
   }
 
   .navegador {
-    left: 0.2rem;
+    top: 1rem;
+    right: 0.2rem;
   }
 }
 
