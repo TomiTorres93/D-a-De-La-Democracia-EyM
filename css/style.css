@@ -1794,11 +1794,10 @@ header, .seccion-color, .seccion-color-elec, .seccion-color-1, .seccion-color-ga
   .footer-2 {
     padding: 0% 5%;
   }
-
-  .navegador {
-    top: 1rem;
-    right: 0.2rem;
-  }
+}
+.navegador {
+  top: 55rem;
+  left: 34rem;
 }
 
 /*# sourceMappingURL=style.css.map */
