@@ -52,7 +52,30 @@
 </head>
 
 <body>
-  <header class="img-portada">
+
+<!-- BARRA DE NAVEGACION -->
+
+<nav class="navegador">
+  <p class="navegador-text">Menú</p>
+  <a class="menucirc " id="circ0" title="Inicio" href="#inicio">⬤</a>
+  <a class="menucirc cirinactive" id="circ1" title="¿Cuándo y
+  por qué se conmemora?" href="#nav1circ" >⬤</a>
+  <a class="menucirc cirinactive" id="circ2" href="#seccionelec1" title="Elecciones 1983">⬤</a>
+  <a class="menucirc cirinactive" id="circ3" href="#nav3circ" title="Las elecciones de 1983 fueron el inicio...">⬤</a>
+  <a class="menucirc cirinactive" id="circ4" href="#galeria"title="Galería de presidentes">⬤</a>
+  <a class="menucirc cirinactive" id="circ5" href="#nav5circ" title="Luchadoras y luchadores por los DD.HH.">⬤</a>
+  <a class="menucirc cirinactive" id="circ6" href="#madres" title="La Ronda de los Jueves">⬤</a>  
+  <a class="menucirc cirinactive" id="circ7" href="#seccionmadres" title="Madres y Abuelas de Plaza de Mayo">⬤</a>  
+  <a class="menucirc cirinactive" id="circ8" href="#nietasynietos" title="Nietos y nietas">⬤</a>  
+  <a class="menucirc cirinactive" id="circ9" href="#organismos" title="Organismos Defensores de DD.HH.">⬤</a>  
+  <a class="menucirc cirinactive" id="circ10" href="#palabrasconmemoria" title="Palabras con memoria">⬤</a>  
+  <a class="menucirc cirinactive" id="circ11"  href="#desafio" title="Desafío para seguir aprendiendo">⬤</a>  
+
+
+</nav>
+
+
+  <header class="img-portada" id="inicio">
     <nav>
       <img class="logo-portada" src="images/logo-edym-fullblanco.png" alt="Logo Educación y Memoria">
 
@@ -73,7 +96,7 @@
 
   </section>
 
-  <section class="seccion-blanca">
+  <section class="seccion-blanca" id="nav1circ">
     <div class="col-lg-6 col-sm-12">
       <h3 class="titulo">¿Cuándo y <br>por qué se conmemora?</h3>
     </div>
@@ -105,7 +128,7 @@
 
   <!-- SECCION ELECCIONES 1983 -->
 
-  <section class="seccion-color-elec columna" id="fadeelec">
+  <section class="seccion-color-elec columna" id="fadeelec" >
 
     <!-- PARTE 1 -->
     <div class="columna seccionelec1" id="seccionelec1">
@@ -182,7 +205,7 @@
 
   </section>
   <!-- IMPORTANCIA DE LAS ELECCIONES -->
-  <section class="seccion-blanca-ll">
+  <section class="seccion-blanca-ll" id="nav3circ">
     <p class="titulo">Las elecciones de 1983 fueron el inicio...</p>
     <p class="parrafo">...de un período democrático que ya lleva <b>38 años.</b> Desde entonces, 11 presidentes de
       distintas banderas políticas pasaron por la Casa Rosada. Más allá de algunas transiciones conflictivas, como las
@@ -309,7 +332,7 @@
   </section>
 
 
-  <section class="seccion-blanca-luchadoras">
+  <section class="seccion-blanca-luchadoras" id="nav5circ">
     <div>
       <p class="titulo none-mobile">Luchadoras y luchadores</p>
       <p class="titulo none-desktop">Luchadoras <br>y luchadores</p>
@@ -489,7 +512,7 @@
   </section>
 
 
-  <section class="seccion-nietos">
+  <section class="seccion-nietos" id="nietasynietos">
     <p class="titulo">Nietas y nietos</p>
     <p class="parrafo blanco">Las Abuelas de Plaza de Mayo, resistiendo al paso del tiempo, siempre se mantuvieron en la
       búsqueda constante de aquellos bebés robados por el terrorismo de Estado. En diciembre de 2021 ya llevan
@@ -545,7 +568,7 @@
   </section>
 
 
-  <section class="seccion-color tt">
+  <section class="seccion-color tt" id="palabrasconmemoria">
     <p class="titulo">Palabras con Memoria</p>
     <p class="parrafo blanco conceptos">Conceptos clave para no olvidar</p>
 
@@ -621,7 +644,7 @@
 
 
   </section>
-  <section class="quiz-pres">
+  <section class="quiz-pres" id="desafio">
     <div class="quiz-titulo">
       <p class="titulo color1">Desafío para seguir reflexionando</p>
     </div>
@@ -766,6 +789,7 @@
 
   <script src="animaciones.js"></script>
   <script src="main.js"></script>
+  <script src="navegador.js"></script>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"

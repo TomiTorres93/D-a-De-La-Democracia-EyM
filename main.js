@@ -910,3 +910,4 @@ check12.addEventListener('click', function () {
         $("#tick12").fadeIn(300)
         tick12.classList.toggle('hidden') }, 50)
 })
+

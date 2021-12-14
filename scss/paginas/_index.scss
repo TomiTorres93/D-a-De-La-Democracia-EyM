@@ -288,6 +288,8 @@ nav {
     font-weight: 600;
 }
 
+
+
 .recuadro {
     width: 70%;
     font-family: 'Raleway', sans-serif;
@@ -1384,9 +1386,9 @@ font-size: 1rem;
 .detalle-text2 {
     font-family: 'Raleway', sans-serif;
     font-size: 0.7rem;
+    font-weight: 600;
     margin-top: 1rem;
     color: black;
-    font-weight: 600;
 }
 
 .link-rosa {
@@ -1401,3 +1403,68 @@ font-size: 1rem;
         }
 }
 
+// NAVEGADOR
+
+.navegador {
+    @extend %flexbox-row;
+    text-align: center;
+    position: fixed;
+    top: 5rem;
+    left: 2rem;
+    width: 1.5rem;
+    height: 15rem;
+    padding: 0.2rem;
+    border-radius: 15px;
+    transition: 0.5s all;
+    z-index: 100;
+
+  
+}
+.cirinactive {
+    opacity: 50%;
+}
+
+.menucirc {
+    color: nth($color, 1);
+    margin: 0.1rem;
+    cursor: pointer;
+    transition: 0.2s all;
+    display: block;
+    height: 1rem;
+    font-size: 0.9rem;
+
+    &:hover {
+        opacity: 100%;
+        color: nth($color, 2);
+        font-size: 1rem;
+
+    }
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav a[title]:hover::after {
+    content: attr(title);
+    width: 10rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    transition: 0.5s all;
+    background-color: nth($color, 1);
+    color: white;
+    position: absolute;
+    left: 2rem;
+    padding: 0.2rem;
+    border-radius: 10px;
+  }
+
+  .navegador-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7rem;
+    color: nth($color, 1);
+    font-weight: 600;
+    writing-mode: vertical-rl;
+    text-orientation:upright;
+}
