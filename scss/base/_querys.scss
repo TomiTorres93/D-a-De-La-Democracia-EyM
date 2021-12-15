@@ -390,7 +390,12 @@ body {
 
 }
 .navegador {
-    top: 40%;
+    top: 55%;
     left: 90%;
 
 }
+
+nav a[title]:hover::after {
+    left: 0rem;
+    right: 10rem;
+  }

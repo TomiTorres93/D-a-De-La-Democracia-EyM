@@ -1796,8 +1796,13 @@ header, .seccion-color, .seccion-color-elec, .seccion-color-1, .seccion-color-ga
   }
 }
 .navegador {
-  top: 40%;
+  top: 55%;
   left: 90%;
+}
+
+nav a[title]:hover::after {
+  left: 0rem;
+  right: 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */
