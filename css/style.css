@@ -1801,8 +1801,7 @@ header, .seccion-color, .seccion-color-elec, .seccion-color-1, .seccion-color-ga
 }
 
 nav a[title]:hover::after {
-  left: 0rem;
-  right: 50%;
+  right: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
