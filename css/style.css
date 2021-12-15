@@ -1796,13 +1796,13 @@ header, .seccion-color, .seccion-color-elec, .seccion-color-1, .seccion-color-ga
   }
 }
 .navegador {
-  top: 55%;
+  top: 60%;
   left: 90%;
 }
 
 nav a[title]:hover::after {
   left: 0rem;
-  right: 10rem;
+  right: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
