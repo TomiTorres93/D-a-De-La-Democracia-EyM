@@ -1794,15 +1794,15 @@ header, .seccion-color, .seccion-color-elec, .seccion-color-1, .seccion-color-ga
   .footer-2 {
     padding: 0% 5%;
   }
-}
-.navegador {
-  top: 60%;
-  left: 90%;
-}
 
-nav a[title]:hover::after {
-  left: 0%;
-  right: 100rem;
+  .navegador {
+    top: 60%;
+    left: 90%;
+  }
+
+  nav a[title]:hover::after {
+    left: -700%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

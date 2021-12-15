@@ -387,8 +387,6 @@ body {
     padding: 0% 5%;
 }
 
-
-}
 .navegador {
     top: 60%;
     left: 90%;
@@ -396,6 +394,6 @@ body {
 }
 
 nav a[title]:hover::after {
-    left: 0%;
-    right: 100rem;
+    left: -700%;
   }
+}
